@@ -1,0 +1,231 @@
+@import "~rfs/scss";
+:host {
+  .project {
+    position: relative;
+    min-height: 80vh;
+    padding: 2.5vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5vmin;
+
+    .project__description {
+      position: inherit;
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 2.5vmin;
+
+      .title {
+        color: var(--accent-700);
+        @include font-size(4rem);
+        text-align: center;
+        margin-bottom: 0.25rem;
+        line-height: 1;
+      }
+
+      cv-locale-markdown {
+        text-align: left;
+        hyphens: auto;
+        line-height: 1.6;
+        margin-bottom: 1rem;
+      }
+    }
+
+    .project__preview {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      perspective: 500px;
+      position: inherit;
+
+      img {
+        position: inherit;
+        object-fit: cover;
+        width: 46vw;
+        cursor: zoom-in;
+        border-radius: 1em;
+
+        &.fallback {
+          zoom: 0.65;
+        }
+      }
+    }
+  }
+
+  &.odd {
+    .project {
+      flex-direction: row;
+
+      .project__description {
+        left: 5vmin;
+
+        .title {
+          text-align: left;
+          margin-left: -4px;
+        }
+
+        cv-locale-markdown {
+          text-align: left;
+          padding-right: 1rem;
+        }
+      }
+
+      .project__preview {
+        img {
+          transform: rotate3d(1, -1, 0.5, 0.05turn) scale(0.75);
+
+          &.light-themed {
+            filter: drop-shadow(1em 1em 0.5em rgba(0, 0, 0, 0.25));
+          }
+
+          &.dark-themed {
+            filter: drop-shadow(2em 2em 1em black);
+          }
+        }
+      }
+    }
+  }
+
+  &.even {
+    .project {
+      flex-direction: row-reverse;
+
+      .project__description {
+        right: 5vw;
+
+        .title {
+          text-align: right;
+          margin-right: -4px;
+        }
+
+        cv-locale-markdown {
+          text-align: right;
+          padding-left: 1rem;
+        }
+      }
+
+      .project__preview {
+        img {
+          transform: rotate3d(1, 1, -0.5, 0.05turn) scale(0.75);
+
+          &.light-themed {
+            filter: drop-shadow(-0.5em 0.75em 0.25em rgba(0, 0, 0, 0.25));
+          }
+
+          &.dark-themed {
+            filter: drop-shadow(-1em 1.5em 0.5em black);
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-1rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(1rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  :host.odd {
+    .project {
+      flex-direction: column-reverse;
+      width: 87.5%;
+      margin: 0 auto 2rem;
+      min-height: unset;
+
+      .project__description {
+        left: 0;
+
+        .title {
+          text-align: center;
+        }
+
+        cv-locale-markdown {
+          text-align: justify;
+          padding: 0;
+        }
+      }
+
+      .project__preview {
+        justify-content: center;
+        margin-bottom: 2rem;
+
+        img {
+          transform: rotate3d(0, 0, 0, 0);
+          right: 0;
+          width: 100%;
+          max-width: 600px;
+          margin: auto;
+          filter: none !important;
+          box-shadow: 0px 0px 0px 2px rgba(0, 0, 0, 0.3);
+
+          &.fallback {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+  :host.even {
+    .project {
+      flex-direction: column-reverse;
+      width: 87.5%;
+      margin: 0 auto 2rem;
+      min-height: unset;
+
+      .project__description {
+        right: 0;
+
+        .title {
+          text-align: center;
+        }
+
+        cv-locale-markdown {
+          text-align: justify;
+          padding: 0;
+        }
+      }
+
+      .project__preview {
+        justify-content: center;
+        margin-bottom: 2rem;
+
+        img {
+          transform: rotate3d(0, 0, 0, 0);
+          filter: none;
+          left: 0;
+          width: 100%;
+          max-width: 600px;
+          margin: auto;
+          filter: none !important;
+          box-shadow: 0px 0px 0px 2px rgba(0, 0, 0, 0.3);
+
+          &.fallback {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}

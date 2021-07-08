@@ -1,0 +1,16 @@
+@import "~@angular/material/theming";
+@import "./typography";
+
+@include mat-core($cv-typography);
+
+@import "./themes";
+
+.light {
+  @include angular-material-theme($light-theme);
+  @include current-theme($light-theme);
+}
+
+.dark {
+  @include angular-material-color($dark-theme);
+  @include current-theme($dark-theme);
+}

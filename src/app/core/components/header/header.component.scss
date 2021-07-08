@@ -1,0 +1,87 @@
+@import "../../scss/constants/toolbar";
+
+mat-toolbar {
+  height: $toolbar-height !important;
+  font-family: "Open sans", sans;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  max-width: 100vw;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+
+  * {
+    color: rgba(255, 255, 255, 0.85);
+  }
+
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-right: 2rem;
+  }
+
+  a {
+    display: grid;
+    place-items: center;
+
+    &::after {
+      display: none;
+    }
+
+    img {
+      height: 24px;
+      width: 24px;
+    }
+  }
+
+  .settings {
+    height: 100%;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+  }
+
+  #language-switch {
+    font-family: inherit;
+    letter-spacing: 1px;
+    font-weight: 100;
+    font-size: 1.2rem;
+  }
+
+  #theme-switch {
+    cursor: pointer;
+    font-size: 1.4rem;
+
+    .mat-icon {
+      font-size: inherit;
+      margin-bottom: 0.25rem;
+    }
+  }
+
+  .mode {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    > mat-icon,
+    mat-slide-toggle {
+      margin-left: 0.75rem;
+    }
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  mat-toolbar {
+    span {
+      font-size: 1.2rem;
+    }
+    nav {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,12 @@
+@import "~@angular/material/theming";
+
+@import "../colors";
+
+$light-theme: mat-light-theme(
+  (
+    color: (
+      primary: mat-palette($primary-light, 700),
+      accent: mat-palette($accent-light, 500)
+    )
+  )
+);

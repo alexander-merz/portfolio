@@ -1,0 +1,19 @@
+{
+  "html": "#f16528",
+  "css": "#2652e7",
+  "javascript": "#f3dc1d",
+  "typescript": "#337bc4",
+  "node": "#70a861",
+  "express": "#eff0e7",
+  "paypal": "#069cdc",
+  "react": "#63dbfb",
+  "leaflet": "#bde66c",
+  "mariadb": "#b9715a",
+  "mongodb": "#32ad68",
+  "java": "#f8981d",
+  "spring": "#6db340",
+  "angular": "#ce092f",
+  "signalr": "#1b1c29",
+  "blockly": "#ccd3db",
+  "rxjs": "#d81f84"
+}

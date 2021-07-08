@@ -1,0 +1,4 @@
+# Ignore artifacts:
+dist
+e2e
+node_modules

@@ -1,0 +1,9 @@
+<img [src]="imageSrc" alt="Client portrait" />
+<aside>
+  <h1 class="mat-display-1">
+    <em>{{ fullName }}</em>
+  </h1>
+  <h1>{{ position }}</h1>
+  <h2>{{ employer }}</h2>
+  <cv-locale-markdown [path]="getMarkdownSrcPath()"></cv-locale-markdown>
+</aside>
