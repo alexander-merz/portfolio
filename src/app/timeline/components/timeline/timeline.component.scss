@@ -9,9 +9,8 @@
     margin: 0 1rem 1rem 1rem;
 
     .timeline__date {
-      font-size: clamp(1.15rem, 3vw, 1.3rem);
+      font-size: clamp(1.15rem, 3vw, 1.5rem);
       color: var(--accent-700);
-      text-shadow: 0 -1px 0 var(--accent-900);
     }
 
     &.right {
@@ -42,13 +41,13 @@
 
   .timeline__component--bg {
     .timeline__title {
-      font-size: clamp(1.15rem, 3vw, 1.3rem);
+      font-size: clamp(1.15rem, 3vw, 1.5rem);
       margin: -3px 0 0 0;
-      line-height: 1.3;
+      line-height: 1;
     }
 
     h3 {
-      line-height: 1.3;
+      line-height: 1.5;
     }
   }
 }

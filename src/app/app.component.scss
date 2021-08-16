@@ -6,7 +6,7 @@ main {
   h1.mat-display-1 {
     position: relative;
     margin: 4rem auto 1rem auto;
-    padding: 0 1rem;
+    padding: 0 3rem;
     width: fit-content;
 
     &::after {
@@ -92,8 +92,11 @@ main {
       display: flex;
       justify-content: flex-start;
       align-items: center;
-      gap: 1rem;
       font-size: clamp(1.05rem, 1.6vw, 1.275rem);
+
+      div:not(:last-child) {
+        margin-right: 1rem;
+      }
 
       div {
         display: flex;
@@ -139,11 +142,10 @@ main {
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      gap: 1rem;
       width: 87.5% !important;
 
       figure {
-        margin: auto;
+        margin: auto auto 2rem auto;
       }
     }
   }

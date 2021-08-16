@@ -12,6 +12,7 @@ mat-toolbar {
   left: 0;
   right: 0;
   z-index: 99;
+  padding: 0 2rem;
 
   * {
     color: rgba(255, 255, 255, 0.85);
@@ -21,8 +22,17 @@ mat-toolbar {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
     margin-right: 2rem;
+
+    a {
+      &:hover {
+        color: var(--accent-500);
+      }
+
+      &:not(:last-child) {
+        margin-right: 2rem;
+      }
+    }
   }
 
   a {

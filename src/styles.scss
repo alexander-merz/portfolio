@@ -92,7 +92,6 @@ body {
 
   p {
     font-size: clamp(1.15rem, 3vw, 1.3rem);
-    letter-spacing: -0.5px;
   }
 
   &.dark {
@@ -140,7 +139,7 @@ body {
 @media screen and (min-width: 1600px) {
   body {
     p {
-      font-size: 1.5rem;
+      font-size: 1.65rem;
     }
   }
 }
