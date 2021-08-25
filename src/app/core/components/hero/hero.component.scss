@@ -8,6 +8,7 @@
   justify-content: space-between;
   background-color: var(--primary-800);
   padding: 0 7.5vmin;
+  user-select: none;
 
   [cvSmoothLink] {
     cursor: pointer;
