@@ -14,6 +14,22 @@
     cursor: pointer;
   }
 
+  #github-link {
+    background: var(--primary-900);
+    clip-path: polygon(0 0, 0% 100%, 100% 100%);
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    img {
+      position: absolute;
+      left: 25px;
+      bottom: 25px;
+    }
+  }
+
   #job-information {
     color: white;
     user-select: none;
@@ -190,6 +206,23 @@
 @media screen and (max-width: 812px) {
   :host {
     #hero {
+      #github-link {
+        clip-path: none;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        width: 80px;
+        border-radius: 0 50% 50% 0;
+        height: 80px;
+
+        img {
+          position: relative;
+          left: 7.5vmin;
+          top: 0;
+          zoom: 0.6;
+        }
+      }
+
       #country-outline {
         left: 0;
         transform: translateY(-33%) translateX(-10%) scale(0.55);
