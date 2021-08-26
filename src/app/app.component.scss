@@ -5,9 +5,10 @@ main {
   position: relative;
 
   h1.mat-display-1 {
+    font-size: 2rem;
     position: relative;
     margin: auto;
-    padding: 12.5vmin 0 1rem 0;
+    padding: 12.5vmin 1rem 5vmin;
     width: fit-content;
 
     &::after {
@@ -94,7 +95,7 @@ main {
       justify-content: flex-start;
       align-items: center;
       gap: 0.5rem;
-      font-size: clamp(1.05rem, 1.6vw, 1.275rem);
+      font-size: clamp(1.05rem, 1.4vw, 1.6rem);
 
       div {
         display: flex;
