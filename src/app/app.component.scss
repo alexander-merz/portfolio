@@ -7,7 +7,7 @@ main {
   h1.mat-display-1 {
     position: relative;
     margin: auto;
-    padding: 3rem 0;
+    padding: 12.5vmin 0 1rem 0;
     width: fit-content;
 
     &::after {
@@ -93,23 +93,14 @@ main {
       display: flex;
       justify-content: flex-start;
       align-items: center;
+      gap: 0.5rem;
       font-size: clamp(1.05rem, 1.6vw, 1.275rem);
-
-      div:not(:last-child) {
-        margin-right: 1rem;
-      }
 
       div {
         display: flex;
         justify-content: center;
         align-items: center;
         gap: 0.5rem;
-
-        a {
-          &::after {
-            all: unset;
-          }
-        }
       }
     }
   }
@@ -161,6 +152,7 @@ main {
   }
 
   .contact {
+    margin-top: 1rem;
     flex-direction: column;
     align-items: flex-start !important;
   }
