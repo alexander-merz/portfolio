@@ -18,6 +18,7 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader'
 import { ProjectModule } from './project/project.module'
 import { QuoteModule } from './quote/quote.module'
 import { TimelineModule } from './timeline/timeline.module'
+import { TechModule } from './tech/tech.module'
 
 export const createTranslateLoader = (http: HttpClient) =>
   new TranslateHttpLoader(http, './assets/i18n/', '.json')
@@ -58,6 +59,7 @@ export const appInitializerFactory =
     SharedModule,
     ProjectModule,
     TimelineModule,
+    TechModule,
     QuoteModule,
     HttpClientModule,
     MarkdownModule.forRoot({ loader: HttpClient }),
