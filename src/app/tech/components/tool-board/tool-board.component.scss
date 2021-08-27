@@ -4,10 +4,11 @@
   justify-content: center;
   gap: 1rem;
   width: 80%;
-  margin: auto;
+  margin: 3rem auto 0;
 
   mat-chip {
-    font-size: 1.2rem;
+    cursor: pointer;
+    font-size: 1.1rem;
     padding: 1.2rem;
     border-radius: 0;
   }
