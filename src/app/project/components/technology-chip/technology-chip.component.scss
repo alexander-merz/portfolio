@@ -12,8 +12,8 @@ mat-chip {
 
 @media screen and (max-width: 600px) {
   mat-chip {
-    padding: 0.7rem;
-    font-size: 0.7rem;
+    padding: 0.55rem 0.65rem;
+    font-size: 0.75rem;
     transform: scale(1);
     margin: 0 2px !important;
   }
