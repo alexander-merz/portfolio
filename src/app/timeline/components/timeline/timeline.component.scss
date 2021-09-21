@@ -3,6 +3,7 @@
   max-width: 1000px;
   display: grid;
   grid-template-columns: 1fr 3px 1fr;
+  margin-top: 1rem;
 
   .timeline__component {
     min-height: 80px;
