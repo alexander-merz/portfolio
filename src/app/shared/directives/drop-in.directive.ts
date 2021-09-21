@@ -12,18 +12,21 @@ export class DropInDirective implements OnInit, OnDestroy {
 
   public constructor(el: ElementRef<any>) {
     this.element = el.nativeElement
-    this.element.style.opacity = '0'
   }
 
   public ngOnInit() {
-    this.intersectionObserver = new IntersectionObserver(([entry]) => {
-      if (entry.isIntersecting) {
-        this.applyAnimation()
-        this.intersectionObserver.unobserve(this.element)
-      }
-    })
+    if (window.innerWidth > 768) {
+      this.element.style.opacity = '0'
 
-    this.intersectionObserver.observe(this.element)
+      this.intersectionObserver = new IntersectionObserver(([entry]) => {
+        if (entry.isIntersecting) {
+          this.applyAnimation()
+          this.intersectionObserver.unobserve(this.element)
+        }
+      })
+
+      this.intersectionObserver.observe(this.element)
+    }
   }
 
   public ngOnDestroy(): void {
