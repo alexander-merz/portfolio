@@ -8,21 +8,8 @@ main {
     font-size: 2rem;
     position: relative;
     margin: auto;
-    padding: 12.5vmin 2rem 5vmin;
+    padding: 12.5vmin 2rem 4vmin;
     width: fit-content;
-
-    &::after {
-      content: "";
-      position: relative;
-      display: inline-block;
-      height: 2px;
-      width: 100%;
-      max-width: 80vw;
-      top: -2rem;
-      background-color: var(--accent-600);
-      border-radius: 50%;
-      opacity: 0.5;
-    }
   }
 
   #services__section {
