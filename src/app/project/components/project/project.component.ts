@@ -1,19 +1,11 @@
-import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout'
 import {
   AfterViewInit,
   Component,
   ElementRef,
-  HostBinding,
   Input,
-  OnDestroy,
-  OnInit,
   ViewChild
 } from '@angular/core'
 import { Subscription } from 'rxjs'
-import {
-  Language,
-  LanguageService
-} from 'src/app/core/services/language.service'
 import { Theme, ThemeService } from 'src/app/core/services/theme.service'
 
 @Component({
