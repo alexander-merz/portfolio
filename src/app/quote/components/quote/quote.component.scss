@@ -21,8 +21,6 @@ aside {
   text-align: left;
 
   h1 {
-    margin-bottom: 0;
-
     &.name {
       color: var(--accent-500);
     }
@@ -30,6 +28,15 @@ aside {
 
   h2 {
     font-size: 1.3rem;
+  }
+
+  .fullname,
+  .employer {
+    margin-bottom: 0.5rem;
+  }
+
+  .position {
+    margin-bottom: 0;
   }
 
   cv-locale-markdown {
