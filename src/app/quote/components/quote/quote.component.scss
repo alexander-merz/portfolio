@@ -20,19 +20,32 @@ img {
 aside {
   text-align: left;
 
+  .quote {
+    position: relative;
+
+    &::before {
+      content: "\00BB";
+      position: absolute;
+      top: 0.1rem;
+      left: -2rem;
+      font-size: 3rem;
+      opacity: 0.25;
+    }
+  }
+
   h1 {
+    margin-bottom: 0;
+
     &.name {
       color: var(--accent-500);
+    }
+    &.position {
+      font-size: 1.45rem;
     }
   }
 
   h2 {
-    font-size: 1.3rem;
-  }
-
-  .fullname,
-  .employer {
-    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
   }
 
   .position {
@@ -66,6 +79,12 @@ aside {
 
   aside {
     text-align: center;
+
+    .quote {
+      &::before {
+        all: unset;
+      }
+    }
 
     markdown {
       hyphens: auto;

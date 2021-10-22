@@ -5,5 +5,7 @@
   </h1>
   <h1 class="position">{{ position }}</h1>
   <h2 class="employer">{{ employer }}</h2>
-  <cv-locale-markdown [path]="getMarkdownSrcPath()"></cv-locale-markdown>
+  <div class="quote">
+    <cv-locale-markdown [path]="getMarkdownSrcPath()"></cv-locale-markdown>
+  </div>
 </aside>
