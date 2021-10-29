@@ -33,6 +33,7 @@
   #job-information {
     color: white;
     user-select: none;
+    font-size: clamp(2.4em, 5.25vmax, 6rem);
 
     .wrapper {
       position: absolute;
@@ -42,12 +43,12 @@
     }
 
     h1 {
-      font-size: clamp(2.4em, 6vmax, 7.25rem);
+      font-size: inherit;
       padding-top: 0.5rem;
     }
 
     h2 {
-      font-size: clamp(2.25em, 5.5vmax, 6.75rem);
+      font-size: inherit;
       color: rgba(255, 255, 255, 0.33);
       padding-bottom: 0.5rem;
     }
@@ -57,17 +58,18 @@
       font-family: "Source Code Pro", monospace;
       overflow: hidden;
       white-space: nowrap;
-      line-height: 1;
+      line-height: 1.2;
       margin-bottom: 0;
     }
 
     #fullname {
       animation: typeFullName 3s steps(14) backwards;
       animation-delay: 4s;
+      margin-top: -0.6rem;
     }
 
     #occupation {
-      animation: typeOccupation 3s steps(13) backwards;
+      animation: typeOccupation 3s steps(17) backwards;
       animation-delay: 1s;
     }
 
@@ -85,7 +87,7 @@
         width: 0ch;
       }
       100% {
-        width: 13ch;
+        width: 17ch;
       }
     }
 
