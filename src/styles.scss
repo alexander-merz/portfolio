@@ -23,7 +23,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden !important;
   max-width: 100vw;
-  line-height: 1.5;
+  line-height: 1.6;
 
   [role="link"] {
     cursor: pointer;
@@ -37,7 +37,7 @@ body {
   }
 
   markdown {
-    line-height: 1.5 !important;
+    line-height: 1.6 !important;
   }
 
   a {
@@ -91,7 +91,8 @@ body {
   }
 
   p {
-    font-size: clamp(1.15rem, 3vw, 1.3rem);
+    font-size: clamp(1.15rem, 3vw, 1.4rem);
+    word-spacing: 1px;
   }
 
   &.dark {

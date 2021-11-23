@@ -36,9 +36,10 @@ aside {
   h1 {
     margin-bottom: 0;
 
-    &.name {
-      color: var(--accent-500);
+    &.fullname {
+      font-size: 1.8rem;
     }
+
     &.position {
       font-size: 1.45rem;
     }
@@ -81,6 +82,7 @@ aside {
     text-align: center;
 
     .quote {
+      margin-top: 2rem;
       &::before {
         all: unset;
       }

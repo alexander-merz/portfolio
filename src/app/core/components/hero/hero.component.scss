@@ -71,6 +71,13 @@
     #occupation {
       animation: typeOccupation 3s steps(17) backwards;
       animation-delay: 1s;
+      background: linear-gradient(
+        to right top,
+        rgba(255, 255, 255, 0.33),
+        var(--accent-800)
+      );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
 
     @keyframes typeFullName {
@@ -158,6 +165,11 @@
 
     #furtwangen {
       left: 115px;
+      bottom: 80px;
+    }
+
+    #munich {
+      right: 175px;
       bottom: 80px;
     }
 
@@ -255,6 +267,12 @@
         .wrapper {
           top: 130px !important;
         }
+      }
+
+      #occupation {
+        background: none !important;
+        -webkit-background-clip: initial !important;
+        -webkit-text-fill-color: initial !important;
       }
 
       #portrait {

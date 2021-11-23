@@ -1,6 +1,7 @@
 {
   "article": "Article",
   "bachelors_degree_candidate": "Bachelor's Degree Candidate",
+  "channel": "Channel",
   "freelancer": "Freenlancer",
   "instagram_post": "Instagram Post",
   "jm_angeln": "J&M Angeln",
@@ -8,6 +9,7 @@
   "pictures": "Pictures",
   "projects_i_worked_on": "Projects",
   "research_project_norova": "NorOvA Project",
+  "results": "Results",
   "since": "since",
   "website": "Website",
   "what_clients_say": "What colleagues and clients say about me",
