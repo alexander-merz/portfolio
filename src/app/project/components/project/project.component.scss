@@ -16,6 +16,10 @@
       padding-bottom: 2.5vmin;
 
       .title {
+        font-family: "Kaushan Script", cursive;
+        letter-spacing: -2px;
+        word-spacing: 4px;
+        text-transform: uppercase;
         color: var(--accent-700);
         @include font-size(4rem);
         text-align: center;
@@ -41,7 +45,7 @@
       img {
         position: inherit;
         object-fit: cover;
-        width: 42.5vw;
+        width: 46vw;
         cursor: zoom-in;
         border-radius: 1em;
 
