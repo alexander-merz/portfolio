@@ -127,6 +127,15 @@
     animation: fadeIn 3s ease-out backwards;
     animation-delay: 4s;
 
+    mat-icon {
+      color: rgba(255, 255, 255, 0.33);
+      position: absolute;
+      left: 147px;
+      bottom: 70px;
+      font-size: 2.5rem;
+      animation: float 2s infinite;
+    }
+
     .dot {
       position: absolute;
       height: 1em;
@@ -200,6 +209,10 @@
         left: 0;
         top: 50%;
         transform: translateY(-33%) translateX(0) scale(0.65);
+
+        mat-icon {
+          display: none;
+        }
       }
 
       #job-information {
