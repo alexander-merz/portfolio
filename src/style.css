@@ -2,8 +2,7 @@
 @import "open-props/normalize";
 
 :root {
-  --brand: var(--cyan-9);
-  --gradient: var(--gradient-2);
+  --brand: var(--cyan-8);
 
   --text1: var(--text1-light);
   --text2: var(--text2-light);
@@ -19,8 +18,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --brand: var(--cyan-1);
-    --gradient: var(--gradient-4);
+    --brand: var(--cyan-2);
 
     --text1: var(--text1-dark);
     --text2: var(--text2-dark);
@@ -31,24 +29,23 @@
     --surface4: var(--surface4-dark);
   }
 
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    background: var(--gradient);
+  header {
+    box-shadow: var(--shadow-2);
   }
 }
 
 html {
-  font-family: var(--font-mono);
   scroll-behavior: smooth;
 }
 
-a:visited {
-  color: var(--brand);
-  text-decoration-color: var(--brand);
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-block: 1rem;
 }
 
 h1,
@@ -57,8 +54,23 @@ h3,
 h4,
 h5,
 h6 {
+  line-height: 1.15;
+  background: var(--brand);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+a:visited {
+  color: var(--brand);
+  text-decoration-color: var(--brand);
+}
+
+h1 {
+  font-size: clamp(2em, calc(var(--font-size-4) + 2vw), 4em);
+}
+
+p {
+  font-size: clamp(1em, calc(0.5em + 1vw), 1.2em);
 }
 
 ul {
@@ -100,4 +112,21 @@ main section {
   scroll-snap-align: start;
   display: grid;
   place-items: center;
+  max-width: min(90vw, 800px);
+  margin: auto;
+}
+
+wc-markdown {
+  max-width: inherit;
+  font-family: var(--font-sans);
+}
+
+pre {
+  overflow-x: auto;
+}
+
+code {
+  font-family: var(--font-mono) !important;
+  display: block;
+  overflow-x: auto;
 }
