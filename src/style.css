@@ -2,7 +2,8 @@
 @import "open-props/normalize";
 
 :root {
-  --brand: var(--cyan-8);
+  --brand: var(--blue-7);
+  --gradient: var(--gradient-7);
 
   --text1: var(--text1-light);
   --text2: var(--text2-light);
@@ -19,6 +20,7 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --brand: var(--cyan-2);
+    --gradient: var(--gradient-22);
 
     --text1: var(--text1-dark);
     --text2: var(--text2-dark);
@@ -43,34 +45,22 @@ h2,
 h3,
 h4,
 h5,
-h6,
-p {
-  margin-block: 1rem;
+h6 {
+  color: unset;
+  line-height: 1.15;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  line-height: 1.15;
-  background: var(--brand);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+h1 {
+  font-size: clamp(2.25em, calc(var(--font-size-3) + 3vmax), 5em);
+}
+
+h2 {
+  font-size: clamp(1.9em, calc(var(--font-size-2) + 2vmax), 4em);
 }
 
 a:visited {
   color: var(--brand);
   text-decoration-color: var(--brand);
-}
-
-h1 {
-  font-size: clamp(2em, calc(var(--font-size-4) + 2vw), 4em);
-}
-
-p {
-  font-size: clamp(1em, calc(0.5em + 1vw), 1.2em);
 }
 
 ul {
@@ -112,7 +102,7 @@ main section {
   scroll-snap-align: start;
   display: grid;
   place-items: center;
-  max-width: min(90vw, 800px);
+  max-width: max(320px, 80vw);
   margin: auto;
 }
 
@@ -129,4 +119,38 @@ code {
   font-family: var(--font-mono) !important;
   display: block;
   overflow-x: auto;
+}
+
+.brand {
+  color: var(--brand);
+}
+
+.gradient {
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.mono {
+  font-family: var(--font-mono);
+}
+
+.lighter {
+  font-weight: lighter;
+}
+
+.profile {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 10vmin;
+}
+
+.profile img {
+  height: clamp(15rem, 20vw, 20rem);
+  width: clamp(15rem, 20vw, 20rem);
+  object-fit: cover;
+  border-radius: 50%;
 }
