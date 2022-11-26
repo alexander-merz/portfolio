@@ -51,11 +51,15 @@ h6 {
 }
 
 h1 {
-  font-size: clamp(2.25em, calc(var(--font-size-3) + 3vmax), 5em);
+  font-size: clamp(2em, calc(var(--font-size-3) + 2.9vmax), 5em);
 }
 
 h2 {
-  font-size: clamp(1.9em, calc(var(--font-size-2) + 2vmax), 4em);
+  font-size: clamp(1.9em, calc(var(--font-size-2) + 2.3vmax), 4em);
+}
+
+hr {
+  margin-block: 1rem;
 }
 
 a:visited {
@@ -102,7 +106,7 @@ main section {
   scroll-snap-align: start;
   display: grid;
   place-items: center;
-  max-width: max(320px, 80vw);
+  max-width: 80vw;
   margin: auto;
 }
 
@@ -139,6 +143,15 @@ code {
   font-weight: lighter;
 }
 
+.m-auto {
+  margin: auto;
+}
+
+em {
+  color: var(--brand);
+  font-style: normal;
+}
+
 .profile {
   display: flex;
   flex-wrap: wrap;
@@ -146,11 +159,30 @@ code {
   align-items: center;
   text-align: center;
   gap: 10vmin;
+
+  img {
+    height: clamp(13rem, 40vmin, 30rem);
+    width: clamp(13rem, 40vmin, 30rem);
+    object-fit: cover;
+    border-radius: 50%;
+  }
 }
 
-.profile img {
-  height: clamp(15rem, 20vw, 20rem);
-  width: clamp(15rem, 20vw, 20rem);
-  object-fit: cover;
-  border-radius: 50%;
+@media screen and (max-width: 415px) {
+  main section {
+    max-width: 90vw;
+  }
+}
+
+@media screen and (max-height: 500px) {
+  .profile img {
+    height: 10rem;
+    width: 10rem;
+  }
+}
+
+@media screen and (max-height: 320px) {
+  img {
+    display: none;
+  }
 }
