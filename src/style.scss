@@ -2,7 +2,7 @@
 @import "open-props/normalize";
 
 :root {
-  --brand: var(--blue-7);
+  --brand: var(--blue-9);
   --gradient: var(--gradient-7);
 
   --text1: var(--text1-light);
@@ -34,6 +34,16 @@
   header {
     box-shadow: var(--shadow-2);
   }
+
+  #background-text {
+    opacity: 0.05;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  #background-text {
+    opacity: 0.08;
+  }
 }
 
 html {
@@ -47,27 +57,41 @@ h4,
 h5,
 h6 {
   color: unset;
-  line-height: 1.15;
+  height: fit-content;
 }
 
 h1 {
-  font-size: clamp(2em, calc(var(--font-size-3) + 2.9vmax), 5em);
+  font-size: clamp(2em, calc(var(--font-size-3) + 5.8vmin), 5em);
 }
 
 h2 {
-  font-size: clamp(1.9em, calc(var(--font-size-2) + 2.3vmax), 4em);
+  font-size: clamp(1.9em, calc(var(--font-size-2) + 4.6vmin), 4em);
+}
+
+h3 {
+  font-size: clamp(1.3em, calc(var(--font-size-1) + 1.5vmin), 3em);
+}
+
+p {
+  font-size: clamp(15px, 2.5vmin, 1.25em);
 }
 
 hr {
   margin-block: 1rem;
 }
 
-a:visited {
+a {
   color: var(--brand);
-  text-decoration-color: var(--brand);
+  text-decoration: underline;
+
+  &:visited {
+    color: var(--brand);
+    text-decoration-color: var(--brand);
+  }
 }
 
-ul {
+ul,
+ol {
   list-style-type: none;
   padding: 0;
 }
@@ -77,22 +101,27 @@ li {
 }
 
 header {
+  background: var(--surface-1);
   height: var(--header-height);
-}
 
-header nav {
-  display: grid;
-  grid-template-columns: 1fr auto;
-  grid-template-rows: var(--header-height);
-  align-items: center;
-}
+  nav {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: var(--header-height);
+    align-items: center;
 
-header nav ul {
-  font-size: 1.5em;
-  display: flex;
-  gap: 1rem;
-  padding: 0 2rem;
-  width: fit-content;
+    ul {
+      font-size: 1.5em;
+      display: flex;
+      gap: 1rem;
+      padding: 0 2rem;
+      width: fit-content;
+
+      li a {
+        text-decoration: none;
+      }
+    }
+  }
 }
 
 main {
@@ -102,12 +131,13 @@ main {
 }
 
 main section {
+  position: relative;
   height: var(--content-height);
   scroll-snap-align: start;
-  display: grid;
-  place-items: center;
   max-width: 80vw;
   margin: auto;
+  padding-block: 2rem;
+  overflow-y: auto;
 }
 
 wc-markdown {
@@ -147,9 +177,10 @@ code {
   margin: auto;
 }
 
-em {
-  color: var(--brand);
-  font-style: normal;
+#hero {
+  display: grid;
+  place-items: center;
+  overflow: hidden;
 }
 
 .profile {
@@ -168,6 +199,47 @@ em {
   }
 }
 
+#career {
+  display: grid;
+  place-items: center;
+
+  ol {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    height: 100%;
+    width: 100%;
+    gap: 1rem;
+
+    li {
+      display: grid;
+      gap: min(4vw, 2rem);
+      grid-template-columns: 30vw 1fr;
+      max-inline-size: none;
+
+      @media screen and (max-width: 600px) {
+        grid-template-columns: 1fr 3fr;
+      }
+
+      img {
+        margin-top: 0.4rem;
+        height: max(2rem, 8vmin);
+        object-fit: cover;
+        justify-self: flex-end;
+
+        &.continental-logo {
+          height: max(3rem, 12vmin);
+        }
+
+        &.bkk-linde-logo {
+          height: max(1.5rem, 6vmin);
+        }
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 415px) {
   main section {
     max-width: 90vw;
@@ -181,8 +253,46 @@ em {
   }
 }
 
-@media screen and (max-height: 320px) {
-  img {
+@media screen and (max-height: 667px) {
+  small {
     display: none;
+  }
+}
+
+#background-text {
+  position: fixed;
+  top: -10vh;
+  right: 90%;
+  bottom: 0;
+  left: 10%;
+
+  overflow: visible;
+  text-align: left;
+  width: fit-content;
+  padding-left: 2.5rem;
+  margin: 5vmax auto 10vmax auto;
+  transform: rotate(-30deg);
+  z-index: -1;
+
+  @media screen and (max-width: 768px) {
+    top: 0;
+    left: 15%;
+    transform: rotate(-20deg);
+  }
+
+  h1 {
+    font-family: var(--font-sans);
+    text-transform: uppercase;
+    line-height: 1;
+
+    &:nth-child(odd) {
+      transform: skew(30deg, 0);
+      color: rgb(130, 130, 130);
+    }
+
+    &:nth-child(even) {
+      color: rgb(170, 170, 170);
+      transform: skew(-30deg, 0);
+    }
   }
 }

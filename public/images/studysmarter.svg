@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 173.2 143.6" style="enable-background:new 0 0 173.2 143.6;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:url(#SVGID_1_);}
+	.st1{fill:url(#SVGID_2_);}
+</style>
+<g>
+	<g>
+		
+			<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="86.5539" y1="66.7916" x2="86.5539" y2="178.0593" gradientTransform="matrix(1 0 0 -1 0 195.5721)">
+			<stop  offset="0" style="stop-color:#1E8CC8"/>
+			<stop  offset="0.1527" style="stop-color:#1E8CC8"/>
+			<stop  offset="0.2249" style="stop-color:#1D84C4"/>
+			<stop  offset="0.3363" style="stop-color:#1B6EBB"/>
+			<stop  offset="0.3999" style="stop-color:#195FB4"/>
+			<stop  offset="0.4598" style="stop-color:#176FB6"/>
+			<stop  offset="0.5763" style="stop-color:#1298BB"/>
+			<stop  offset="0.6336" style="stop-color:#0FAFBE"/>
+			<stop  offset="0.7402" style="stop-color:#0CB7BC"/>
+			<stop  offset="0.9034" style="stop-color:#05CCB8"/>
+			<stop  offset="1" style="stop-color:#00DCB4"/>
+		</linearGradient>
+		<path class="st0" d="M47.8,123.2c-6.3-3.7-10.3-10.5-10.3-17.8V89.7c0-2.4,0.4-4.9,1.3-7.2v-0.1l3.3-5.7l0.1-0.1
+			c1.6-1.9,3.5-3.5,5.6-4.7L76,55.6c3.8-2.2,6.1-6.2,6.1-10.5v-28l4.2-5L91,17v28c0,4.3,2.3,8.4,6.1,10.5l28.2,16.3
+			c2.1,1.2,4,2.8,5.6,4.7l0.1,0.1l3.3,5.7v0.1c0.9,2.3,1.3,4.7,1.3,7.2v15.7c0,7.3-3.9,14.1-10.3,17.8l-28.5,16.5l-4.6-4.7l4.3-5.3
+			l24.2-14c3.8-2.2,6.1-6.2,6.1-10.5V89.9c0-1.1-0.2-2.2-0.5-3.3l-3-5.2c-0.8-0.8-1.7-1.5-2.6-2l-28-16.2c-1.8-1.1-4-1.6-6.1-1.6
+			s-4.2,0.6-6.1,1.6l-28,16.2c-0.9,0.5-1.8,1.2-2.6,2l-3,5.2c-0.3,1.1-0.5,2.2-0.5,3.3v15.2c0,4.3,2.3,8.4,6.1,10.5l24.2,14l3.8,5.9
+			l-4.2,4.2L47.8,123.2z"/>
+		
+			<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="86.6039" y1="66.4502" x2="86.6039" y2="177.6193" gradientTransform="matrix(1 0 0 -1 0 195.5721)">
+			<stop  offset="0" style="stop-color:#1E8CC8"/>
+			<stop  offset="0.6237" style="stop-color:#0ABEBE"/>
+			<stop  offset="0.758" style="stop-color:#08C3BC"/>
+			<stop  offset="0.9099" style="stop-color:#04D0B8"/>
+			<stop  offset="1" style="stop-color:#00DCB4"/>
+		</linearGradient>
+		<path class="st1" d="M86.6,142.4c-3.6,0-7.2-1-10.3-2.8l0.4-10c0.6,0.3,1.2,0.5,1.8,0.5c1.8,0,3.6-1.4,3.6-3.6v-10.8
+			c0-4.3-2.3-8.4-6.1-10.5L7.6,65.7c-4-2.3-6.4-6.4-6.4-11s2.4-8.7,6.4-11L76.3,3.9c3.1-1.8,6.7-2.8,10.3-2.8c3.6,0,7.2,1,10.3,2.8
+			l68.7,39.7c4,2.3,6.4,6.4,6.4,11s-2.4,8.7-6.4,11l-68.4,39.5c-3.8,2.2-6.1,6.2-6.1,10.5v10.8c0,1,0.4,1.9,1.1,2.6
+			c0.7,0.7,1.6,1,2.5,1c0.6,0,1.2-0.2,1.8-0.5l0.4,10C93.7,141.5,90.2,142.4,86.6,142.4z M78.5,13.5c-0.6,0-1.2,0.2-1.8,0.5
+			l-65,37.5c-1.1,0.7-1.8,1.8-1.8,3.1s0.7,2.5,1.8,3.1l68.8,39.7c1.8,1.1,3.9,1.6,6.1,1.6s4.2-0.6,6.1-1.6l68.8-39.6
+			c1.1-0.7,1.8-1.8,1.8-3.1s-0.7-2.5-1.8-3.1l-65-37.5c-0.6-0.3-1.2-0.5-1.8-0.5c-1.8,0-3.6,1.4-3.6,3.6h-8.9
+			C82.2,14.9,80.3,13.5,78.5,13.5z"/>
+	</g>
+</g>
+</svg>
