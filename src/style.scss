@@ -299,8 +299,11 @@ section:is(#career) {
 }
 
 section:is(#tech-stack) {
+  place-items: unset;
+
   ul {
-    padding: 10vmin 5vmin;
+    width: 100%;
+    padding: 10vmin;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -323,11 +326,7 @@ section:is(#tech-stack) {
         gap: 1rem;
 
         img {
-          height: 15vmin;
-        }
-
-        h3 {
-          text-align: center;
+          height: min(10rem, 20vmin);
         }
       }
     }
