@@ -301,9 +301,10 @@ section:is(#career) {
 section:is(#tech-stack) {
   place-items: unset;
 
-  ul {
+  ul.primary-tech {
     width: 100%;
     padding: 10vmin;
+    padding-bottom: 5vmin;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -314,21 +315,34 @@ section:is(#tech-stack) {
       height: inherit;
       display: flex;
       flex-direction: column;
+      justify-content: center;
+      align-items: center;
       gap: 1rem;
 
-      div {
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        grid-gap: 1rem;
-        gap: 1rem;
-
-        img {
-          height: min(10rem, 20vmin);
-        }
+      img {
+        height: min(10rem, 20vmin);
+        width: min(10rem, 20vmin);
       }
+    }
+  }
+
+  ul.secondary-tech {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    grid-gap: 1rem;
+    gap: 1rem;
+    width: 90%;
+    margin: 2rem auto 0;
+    font-family: var(--font-mono);
+
+    li {
+      cursor: default;
+      height: fit-content;
+      padding: 0.5rem 1rem;
+      border: 1px solid var(--brand);
+      border-radius: 50px;
+      background: transparent !important;
     }
   }
 }
