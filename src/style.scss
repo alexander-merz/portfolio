@@ -202,12 +202,8 @@ code {
 }
 
 section:is(#career) {
-  display: grid;
-  grid-template-rows: auto 1fr;
-  place-items: center;
-
   h1 {
-    align-self: flex-end;
+    margin-bottom: 2rem;
   }
 
   ol {
@@ -217,6 +213,7 @@ section:is(#career) {
     align-items: flex-start;
     height: 100%;
     width: 100%;
+    gap: 1rem;
 
     li {
       display: grid;
