@@ -56,6 +56,10 @@ h6 {
   height: fit-content;
 }
 
+small {
+  font-size: 0.8em;
+}
+
 h1 {
   font-size: clamp(2em, calc(var(--font-size-3) + 5.8vmin), 5em);
 }
@@ -69,7 +73,7 @@ h3 {
 }
 
 p {
-  font-size: clamp(15px, 2.5vmin, 1.25em);
+  font-size: clamp(15px, 2.5vmin, 20px);
 }
 
 hr {
@@ -299,8 +303,6 @@ section:is(#career) {
 }
 
 section:is(#tech-stack) {
-  place-items: unset;
-
   ul.primary-tech {
     width: 100%;
     padding: 10vmin;
@@ -311,7 +313,7 @@ section:is(#tech-stack) {
     gap: 10vmin;
 
     li {
-      flex: 1 1 20vmin;
+      flex: 1 1 17.5vmin;
       height: inherit;
       display: flex;
       flex-direction: column;
@@ -320,8 +322,8 @@ section:is(#tech-stack) {
       gap: 1rem;
 
       img {
-        height: min(10rem, 20vmin);
-        width: min(10rem, 20vmin);
+        height: min(10rem, 17.5vmin);
+        width: min(10rem, 17.5vmin);
       }
     }
   }
@@ -330,19 +332,49 @@ section:is(#tech-stack) {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    grid-gap: 1rem;
-    gap: 1rem;
+    gap: 5vmin;
     width: 90%;
     margin: 2rem auto 0;
-    font-family: var(--font-mono);
 
     li {
       cursor: default;
+      font-weight: 600;
       height: fit-content;
       padding: 0.5rem 1rem;
-      border: 1px solid var(--brand);
       border-radius: 50px;
-      background: transparent !important;
+      background: var(--surface-3);
+    }
+  }
+}
+
+section:is(#quotes) {
+  ol {
+    padding: 10vmin 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex;
+    justify-content: center;
+    gap: max(10vmin, 3rem);
+
+    li {
+      img {
+        height: min(10rem, 20vmin);
+        width: min(10rem, 20vmin);
+        object-fit: cover;
+        border-radius: 50%;
+        box-shadow: 0 0 0 2pt var(--text-2);
+        margin: auto;
+      }
+
+      div {
+        text-align: center;
+        margin-block: 1rem;
+      }
+
+      blockquote {
+        padding-block: 0;
+        padding-inline: 1rem 0;
+      }
     }
   }
 }
