@@ -1,0 +1,42 @@
+:root {
+  --brand: var(--blue-9);
+  --gradient: var(--gradient-7);
+
+  --text1: var(--text1-light);
+  --text2: var(--text2-light);
+
+  --surface1: var(--surface1-light);
+  --surface2: var(--surface2-light);
+  --surface3: var(--surface3-light);
+  --surface4: var(--surface4-light);
+
+  --header-height: 80px;
+  --content-height: calc(100vh - var(--header-height));
+
+  --rfc-regular: clamp(0.9rem, 2.2vmin, 1.25rem);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --brand: var(--cyan-2);
+    --gradient: var(--gradient-22);
+
+    --text1: var(--text1-dark);
+    --text2: var(--text2-dark);
+
+    --surface1: var(--surface1-dark);
+    --surface2: var(--surface2-dark);
+    --surface3: var(--surface3-dark);
+    --surface4: var(--surface4-dark);
+  }
+
+  #background-text {
+    opacity: 0.05;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  #background-text {
+    opacity: 0.08;
+  }
+}

@@ -1,0 +1,38 @@
+section:is(#career) {
+  ol {
+    display: grid;
+    grid-auto-rows: 1fr;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    height: 100%;
+    width: 100%;
+    gap: 1rem;
+
+    li {
+      display: grid;
+      gap: min(4vw, 2rem);
+      grid-template-columns: 1fr 1fr;
+      max-inline-size: none;
+
+      @media screen and (max-width: 768px) {
+        grid-template-columns: 20vw 1fr;
+      }
+
+      img {
+        margin-top: 0.4rem;
+        height: max(2rem, 8vmin);
+        object-fit: cover;
+        justify-self: flex-end;
+
+        &.continental-logo {
+          height: max(3rem, 12vmin);
+        }
+
+        &.bkk-linde-logo {
+          height: max(1.5rem, 6vmin);
+        }
+      }
+    }
+  }
+}

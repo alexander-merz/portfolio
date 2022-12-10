@@ -1,12 +1,16 @@
-![Mirko Kauertz](/public/images/mirko-kauertz.jpg)
+<div class="outer">
 
-<div>
+![Mirko Kauertz](/images/mirko-kauertz.jpg)
+
+<div class="inner">
 
 ### Mirko Kauertz
 
 IT Consultant
 
 <small>BCM Solutions</small>
+
+</div>
 
 </div>
 

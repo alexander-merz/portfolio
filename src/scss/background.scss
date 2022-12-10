@@ -1,0 +1,40 @@
+#background-text {
+  user-select: none;
+  position: fixed;
+  top: -5%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  overflow: visible;
+  text-align: center;
+  width: fit-content;
+  padding-left: 2.5rem;
+  margin: 5vmax auto 10vmax auto;
+  transform: rotate(-30deg);
+  z-index: -1;
+
+  @media screen and (max-width: 912px) {
+    top: 0;
+  }
+
+  @media screen and (max-width: 500px) {
+    display: none;
+  }
+
+  h1 {
+    font-family: var(--font-sans);
+    text-transform: uppercase;
+    line-height: 1;
+
+    &:nth-child(odd) {
+      transform: skew(30deg, 0);
+      color: rgb(130, 130, 130);
+    }
+
+    &:nth-child(even) {
+      color: rgb(170, 170, 170);
+      transform: skew(-30deg, 0);
+    }
+  }
+}

@@ -1,12 +1,16 @@
-![Ronny Limbach](/public/images/ronny-limbach.jpeg)
+<div class="outer">
 
-<div>
+![Ronny Limbach](/images/ronny-limbach.jpeg)
+
+<div class="inner">
 
 ### Ronny Limbach
 
 Bereichsleiter IT
 
 <small>BKK Linde</small>
+
+</div>
 
 </div>
 

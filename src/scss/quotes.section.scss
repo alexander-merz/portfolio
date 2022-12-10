@@ -1,0 +1,47 @@
+section:is(#quotes) {
+  ol {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: max(10vmin, 3rem);
+
+    li {
+      max-inline-size: unset;
+
+      .outer {
+        display: flex;
+        gap: 1.5rem;
+        margin-bottom: 1.5rem;
+      }
+
+      .inner {
+        text-align: left;
+        margin: auto 0;
+      }
+
+      img {
+        height: min(7.5rem, 20vmin);
+        width: min(7.5rem, 20vmin);
+        object-fit: cover;
+        border-radius: 50%;
+        box-shadow: 0 0 0 2pt var(--text-2);
+        margin: auto;
+      }
+
+      blockquote {
+        padding-block: 0;
+        padding-inline: 1rem 0;
+      }
+
+      @media screen and (max-width: 600px) {
+        .outer {
+          flex-direction: column;
+        }
+
+        .inner {
+          text-align: center;
+        }
+      }
+    }
+  }
+}

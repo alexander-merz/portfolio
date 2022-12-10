@@ -1,46 +1,14 @@
 @import "open-props/style";
 @import "open-props/normalize";
 
-:root {
-  --brand: var(--blue-9);
-  --gradient: var(--gradient-7);
+@import "/src/scss/root.scss";
 
-  --text1: var(--text1-light);
-  --text2: var(--text2-light);
-
-  --surface1: var(--surface1-light);
-  --surface2: var(--surface2-light);
-  --surface3: var(--surface3-light);
-  --surface4: var(--surface4-light);
-
-  --header-height: 60px;
-  --content-height: calc(100vh - var(--header-height));
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --brand: var(--cyan-2);
-    --gradient: var(--gradient-22);
-
-    --text1: var(--text1-dark);
-    --text2: var(--text2-dark);
-
-    --surface1: var(--surface1-dark);
-    --surface2: var(--surface2-dark);
-    --surface3: var(--surface3-dark);
-    --surface4: var(--surface4-dark);
-  }
-
-  #background-text {
-    opacity: 0.05;
-  }
-}
-
-@media (prefers-color-scheme: light) {
-  #background-text {
-    opacity: 0.08;
-  }
-}
+@import "/src/scss/background.scss";
+@import "/src/scss/hero.section.scss";
+@import "/src/scss/career.section.scss";
+@import "/src/scss/tech.section.scss";
+@import "/src/scss/quotes.section.scss";
+@import "/src/scss/projects.section.scss";
 
 html {
   scroll-behavior: smooth;
@@ -54,6 +22,7 @@ h5,
 h6 {
   color: unset;
   height: fit-content;
+  max-inline-size: none;
 }
 
 small {
@@ -72,8 +41,12 @@ h3 {
   font-size: clamp(1.3em, calc(var(--font-size-1) + 1.5vmin), 3em);
 }
 
+h4 {
+  font-size: clamp(1rem, calc(var(--font-size-1) + 0.5vmin), 1.5rem);
+}
+
 p {
-  font-size: clamp(15px, 2.5vmin, 20px);
+  font-size: var(--rfc-regular);
 }
 
 hr {
@@ -101,7 +74,6 @@ li {
 }
 
 header {
-  background: var(--surface-1);
   height: var(--header-height);
 
   nav {
@@ -126,26 +98,24 @@ header {
 
 main {
   max-height: var(--content-height);
-}
 
-main section {
-  position: relative;
-  min-height: 100vh;
-  max-width: 80vw;
-  margin: auto;
-  padding-block: 2rem;
-  display: grid;
-  place-items: center;
-
-  h1 {
-    text-align: center;
+  section {
+    position: relative;
     margin: auto;
-  }
-}
+    min-height: 100vh;
+    max-width: min(1500px, 80vw);
+    padding-block: 5vmin;
 
-section:is(#hero) {
-  min-height: unset;
-  height: var(--content-height);
+    @media screen and (max-width: 415px) {
+      max-width: 90vw;
+    }
+
+    > h1 {
+      text-align: center;
+      margin: auto;
+      margin-bottom: 10vmin;
+    }
+  }
 }
 
 wc-markdown {
@@ -167,6 +137,20 @@ code {
   color: var(--brand);
 }
 
+.chip {
+  background: var(--surface-4);
+  cursor: default;
+  height: fit-content;
+  font-weight: 600;
+  padding: max(0.5vmin, 0.5rem) max(1vmin, 1rem);
+  border-radius: 50px;
+
+  @media screen and (max-width: 500px) {
+    font-size: 0.9rem;
+    padding: 0.375rem 0.75rem;
+  }
+}
+
 .gradient {
   background: var(--gradient);
   -webkit-background-clip: text;
@@ -181,197 +165,20 @@ code {
   font-weight: lighter;
 }
 
-.m-auto {
-  margin: auto;
-}
+.m {
+  &-0 {
+    margin: 0;
+  }
 
-.profile {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  gap: 10vmin;
-
-  img {
-    height: clamp(13rem, 40vmin, 30rem);
-    width: clamp(13rem, 40vmin, 30rem);
-    object-fit: cover;
-    border-radius: 50%;
+  &-auto {
+    margin: auto;
   }
 }
 
-section:is(#career) {
-  h1 {
-    margin-bottom: 2rem;
-  }
-
-  ol {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: flex-start;
-    height: 100%;
-    width: 100%;
-    gap: 1rem;
-
-    li {
-      display: grid;
-      gap: min(4vw, 2rem);
-      grid-template-columns: 30vw 1fr;
-      max-inline-size: none;
-
-      @media screen and (max-width: 600px) {
-        grid-template-columns: 25vw 1fr;
-      }
-
-      img {
-        margin-top: 0.4rem;
-        height: max(2rem, 8vmin);
-        object-fit: cover;
-        justify-self: flex-end;
-
-        &.continental-logo {
-          height: max(3rem, 12vmin);
-        }
-
-        &.bkk-linde-logo {
-          height: max(1.5rem, 6vmin);
-        }
-      }
-    }
-  }
-}
-
-@media screen and (max-width: 415px) {
-  main section {
-    max-width: 90vw;
-  }
-}
-
-@media screen and (max-height: 500px) {
-  .profile img {
-    height: 10rem;
-    width: 10rem;
-  }
-}
-
-@media screen and (max-height: 667px) {
-  small {
-    display: none;
-  }
-}
-
-#background-text {
-  user-select: none;
-  position: fixed;
-  top: -5%;
-  right: 0;
-  bottom: 0;
-  left: 0;
-
-  overflow: visible;
-  text-align: center;
-  width: fit-content;
-  padding-left: 2.5rem;
-  margin: 5vmax auto 10vmax auto;
-  transform: rotate(-30deg);
-  z-index: -1;
-
-  @media screen and (max-width: 912px) {
-    top: 0;
-  }
-
-  h1 {
-    font-family: var(--font-sans);
-    text-transform: uppercase;
-    line-height: 1;
-
-    &:nth-child(odd) {
-      transform: skew(30deg, 0);
-      color: rgb(130, 130, 130);
-    }
-
-    &:nth-child(even) {
-      color: rgb(170, 170, 170);
-      transform: skew(-30deg, 0);
-    }
-  }
-}
-
-section:is(#tech-stack) {
-  ul.primary-tech {
-    width: 100%;
-    padding: 10vmin;
-    padding-bottom: 5vmin;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10vmin;
-
-    li {
-      flex: 1 1 17.5vmin;
-      height: inherit;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      gap: 1rem;
-
-      img {
-        height: min(10rem, 17.5vmin);
-        width: min(10rem, 17.5vmin);
-      }
-    }
-  }
-
-  ul.secondary-tech {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 5vmin;
-    width: 90%;
-    margin: 2rem auto 0;
-
-    li {
-      cursor: default;
-      font-weight: 600;
-      height: fit-content;
-      padding: 0.5rem 1rem;
-      border-radius: 50px;
-      background: var(--surface-3);
-    }
-  }
-}
-
-section:is(#quotes) {
-  ol {
-    padding: 10vmin 0;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex;
-    justify-content: center;
-    gap: max(10vmin, 3rem);
-
-    li {
-      img {
-        height: min(10rem, 20vmin);
-        width: min(10rem, 20vmin);
-        object-fit: cover;
-        border-radius: 50%;
-        box-shadow: 0 0 0 2pt var(--text-2);
-        margin: auto;
-      }
-
-      div {
-        text-align: center;
-        margin-block: 1rem;
-      }
-
-      blockquote {
-        padding-block: 0;
-        padding-inline: 1rem 0;
-      }
-    }
-  }
+.separator {
+  height: 0.4em;
+  width: 0.4em;
+  border-radius: 0;
+  transform: rotate(45deg);
+  background: var(--brand);
 }
