@@ -163,22 +163,8 @@ section:is(#projects) {
       margin-block: 0.5rem;
 
       li:not(:last-child)::after {
-        content: "";
-        position: relative;
-        display: inline-block;
-        height: 0.75rem;
-        width: 0.75rem;
-        margin-inline: 0.75rem;
-        transform: rotate(45deg);
-        background: var(--brand);
-      }
-
-      @media screen and (max-width: 415px) {
-        li:not(:last-child)::after {
-          all: unset;
-          content: ",";
-          margin-inline-end: 0.25rem;
-        }
+        content: ",";
+        margin-inline-end: 0.25rem;
       }
     }
 

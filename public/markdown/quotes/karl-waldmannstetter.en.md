@@ -8,7 +8,7 @@
 
 Principal Software Architect
 
-<small>Selbstständiger Software-Ingenieur</small>
+<small>Independent Software Engineer</small>
 
 </div>
 

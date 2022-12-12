@@ -17,15 +17,15 @@
     <script type="module" src="/node_modules/@vanillawc/wc-markdown/index.js"></script>
     <script type="module" src="/node_modules/@vanillawc/wc-markdown/components/prism-typescript.js"></script>
     <script type="module" src="/src/main.js"></script>
+    <script type="module" src="/src/i18n/i18n.js"></script>
   </head>
   <body>
     <header>
       <nav>
-        <a href="#career">Career</a>
+        <a href="#career" data-translate>Career</a>
         <a href="#tech-stack">Stack</a>
-        <a href="#quotes">Quotes</a>
-        <a href="#projects">Projects</a>
-        <a>Articles</a>
+        <a href="#quotes" data-translate>Quotes</a>
+        <a href="#projects" data-translate>Projects</a>
       </nav>
     </header>
 
@@ -64,7 +64,7 @@
       </div>
 
       <section id="career">
-        <h1>Career</h1>
+        <h1 data-translate>Career</h1>
 
         <ol>
           <li>
@@ -72,19 +72,21 @@
             <div>
               <h3>Frontend Engineer</h3>
               <p>
-                <time>Dezember 2021</time> - <em><time>heute</time></em>
+                <time><span data-translate>December</span> 2021</time> - <em><time data-translate>today</time></em>
               </p>
               <p>
                 <a href="https://studysmarter.us" target="_blank">StudySmarter</a>
               </p>
-              <small>München, Bayern, DE</small>
+              <small><span data-translate>Munich</span>, <span data-translate>Bavaria</span>, DE</small>
             </div>
           </li>
           <li>
             <img class="continental-logo" src="/images/continental.png" alt="" />
             <div>
               <h3>Frontend Developer</h3>
-              <p><time>Dezember 2020</time> - <time>Oktober 2021</time></p>
+              <p>
+                <time><span data-translate>December</span> 2020</time> - <time>Oktober 2021</time>
+              </p>
               <p>
                 <a href="https://studysmarter.us" target="_blank">Continental</a>
               </p>
@@ -106,7 +108,9 @@
             <img class="bkk-linde-logo" src="/images/bkk-linde.svg" alt="" />
             <div>
               <h3>Werkstudent</h3>
-              <p><time>September 2018</time> - <time>Juli 2020</time></p>
+              <p>
+                <time>September 2018</time> - <time><span data-translate>July</span> 2020</time>
+              </p>
               <p>
                 <a href="https://studysmarter.us" target="_blank">BKK Linde</a>
               </p>
@@ -131,32 +135,32 @@
         </ul>
 
         <ul class="secondary-tech">
-          <li class="chip"><h4>SCSS</h4></li>
-          <li class="chip"><h4>Bootstrap</h4></li>
-          <li class="chip"><h4>RxJS</h4></li>
-          <li class="chip"><h4>Express</h4></li>
-          <li class="chip"><h4>MySQL</h4></li>
-          <li class="chip"><h4>MongoDB</h4></li>
-          <li class="chip"><h4>Git</h4></li>
-          <li class="chip"><h4>Github</h4></li>
-          <li class="chip"><h4>Husky</h4></li>
-          <li class="chip"><h4>Azure DevOps</h4></li>
-          <li class="chip"><h4>npm</h4></li>
-          <li class="chip"><h4>Webpack</h4></li>
-          <li class="chip"><h4>Babel</h4></li>
-          <li class="chip"><h4>Gulp</h4></li>
-          <li class="chip"><h4>Rollup</h4></li>
-          <li class="chip"><h4>Vite</h4></li>
-          <li class="chip"><h4>Jasmine</h4></li>
-          <li class="chip"><h4>Jest</h4></li>
-          <li class="chip"><h4>Cypress</h4></li>
-          <li class="chip"><h4>Stencil</h4></li>
-          <li class="chip"><h4>Lit</h4></li>
+          <li class="chip">SCSS</li>
+          <li class="chip">Bootstrap</li>
+          <li class="chip">RxJS</li>
+          <li class="chip">Express</li>
+          <li class="chip">MySQL</li>
+          <li class="chip">MongoDB</li>
+          <li class="chip">Git</li>
+          <li class="chip">Github</li>
+          <li class="chip">Husky</li>
+          <li class="chip">Azure DevOps</li>
+          <li class="chip">npm</li>
+          <li class="chip">Webpack</li>
+          <li class="chip">Babel</li>
+          <li class="chip">Gulp</li>
+          <li class="chip">Rollup</li>
+          <li class="chip">Vite</li>
+          <li class="chip">Jasmine</li>
+          <li class="chip">Jest</li>
+          <li class="chip">Cypress</li>
+          <li class="chip">Stencil</li>
+          <li class="chip">Lit</li>
         </ul>
       </section>
 
       <section id="quotes">
-        <h1>Quotes</h1>
+        <h1 data-translate>Quotes</h1>
 
         <ol>
           <li><wc-markdown src="/markdown/quotes/karl-waldmannstetter.en.md"></wc-markdown></li>
@@ -166,16 +170,16 @@
       </section>
 
       <section id="projects">
-        <h1>Projects</h1>
+        <h1 data-translate>Projects</h1>
 
         <article>
           <h2 class="gradient">StudySmarter</h2>
 
           <ul class="facts">
             <li><em>Frontend Engineer</em></li>
-            <li>München</li>
+            <li data-translate>Munich</li>
             <li>
-              <time>12/2021</time> - <time><em>heute</em></time>
+              <time>12/2021</time> - <time><em data-translate>Today</em></time>
             </li>
           </ul>
 
@@ -214,7 +218,7 @@
           <h3>Hochschule Furtwangen</h3>
 
           <ul class="facts">
-            <li><em>Bachelorand</em></li>
+            <li><em>Thesis</em></li>
             <li>Furtwangen</li>
             <li><time>12/2020</time> - <time>10/2021</time></li>
           </ul>
@@ -233,17 +237,17 @@
               <a
                 href="https://vm.baden-wuerttemberg.de/de/politik-zukunft/zukunftskonzepte/digitale-mobilitaet/mobiarch-bw/norova/"
                 target="_blank"
-              >
-                Artikel</a
+                data-translate
+                >Article</a
               >
             </li>
             <li>
               <a
                 href="https://vm.baden-wuerttemberg.de/fileadmin/redaktion/m-mvi/intern/Dateien/PDF/07-MobiArch-NorOva-Final.pdf"
                 target="_blank"
+                data-translate
+                >Results</a
               >
-                Ergebnisse
-              </a>
             </li>
             <li><a href="https://www.instagram.com/p/CCsvu0Gi88Y/" target="_blank">Instagram Post</a></li>
           </ul>
@@ -256,7 +260,7 @@
           <h3>J&M Angeln</h3>
 
           <ul class="facts">
-            <li><em>Freiberufler</em></li>
+            <li><em data-translate>Freelancer</em></li>
             <li><time>2019</time> - <time>2020</time></li>
           </ul>
 
@@ -271,7 +275,7 @@
           <wc-markdown src="/markdown/projects/jm-angeln.en.md"></wc-markdown>
 
           <ul class="links">
-            <li><a href="https://jmangeln.de/" target="_blank">Webseite</a></li>
+            <li><a href="https://jmangeln.de/" target="_blank" data-translate>Website</a></li>
             <li><a href="https://www.youtube.com/@jonas9192" target="_blank">YouTube</a></li>
           </ul>
         </article>
@@ -283,7 +287,7 @@
           <h3>BKK Linde</h3>
 
           <ul class="facts">
-            <li><em>Werkstudent</em></li>
+            <li><em data-translate>Working student</em></li>
             <li>Singen</li>
             <li><time>09/2018</time> - <time>02/2020</time></li>
           </ul>

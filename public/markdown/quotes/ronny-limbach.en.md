@@ -6,7 +6,7 @@
 
 ### [Ronny Limbach](https://www.xing.com/profile/Ronny_Limbach/cv)
 
-Bereichsleiter IT
+Head of IT
 
 <small>BKK Linde</small>
 
