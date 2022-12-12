@@ -4,7 +4,7 @@
 
 <div class="inner">
 
-### Mirko Kauertz
+### [Mirko Kauertz](https://www.xing.com/profile/Mirko_Kauertz/cv)
 
 IT Consultant
 

@@ -4,7 +4,7 @@
 
 <div class="inner">
 
-### Karl Waldmanstetter
+### [Karl Waldmanstetter](https://www.waldmannstetter.de/#/)
 
 Principal Software Architect
 

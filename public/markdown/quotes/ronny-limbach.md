@@ -4,7 +4,7 @@
 
 <div class="inner">
 
-### Ronny Limbach
+### [Ronny Limbach](https://www.xing.com/profile/Ronny_Limbach/cv)
 
 Bereichsleiter IT
 
