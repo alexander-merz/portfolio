@@ -1,8 +1,8 @@
-<div class="outer">
+<div class="quote">
 
 ![Mirko Kauertz](/images/mirko-kauertz.jpg)
 
-<div class="inner">
+<div class="quotee">
 
 ### [Mirko Kauertz](https://www.xing.com/profile/Mirko_Kauertz/cv)
 

@@ -1,8 +1,8 @@
-<div class="outer">
+<div class="quote">
 
 ![Ronny Limbach](/images/ronny-limbach.jpeg)
 
-<div class="inner">
+<div class="quotee">
 
 ### [Ronny Limbach](https://www.xing.com/profile/Ronny_Limbach/cv)
 

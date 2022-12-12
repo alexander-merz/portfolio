@@ -8,13 +8,13 @@ section:is(#quotes) {
     li {
       max-inline-size: unset;
 
-      .outer {
+      .quote {
         display: flex;
         gap: 1.5rem;
         margin-bottom: 1.5rem;
       }
 
-      .inner {
+      .quotee {
         text-align: left;
         margin: auto 0;
       }
@@ -34,11 +34,11 @@ section:is(#quotes) {
       }
 
       @media screen and (max-width: 600px) {
-        .outer {
+        .quote {
           flex-direction: column;
         }
 
-        .inner {
+        .quotee {
           text-align: center;
         }
       }

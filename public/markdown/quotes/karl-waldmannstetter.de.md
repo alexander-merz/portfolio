@@ -1,8 +1,8 @@
-<div class="outer">
+<div class="quote">
 
 ![Karl Waldmannstetter](/images/Karl_Waldmannstetter.jpg)
 
-<div class="inner">
+<div class="quotee">
 
 ### [Karl Waldmanstetter](https://www.waldmannstetter.de/#/)
 
