@@ -5,6 +5,7 @@ section:is(#hero) {
   height: var(--content-height);
 
   .profile {
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -12,15 +13,41 @@ section:is(#hero) {
     text-align: center;
     gap: 10vmin;
 
-    img {
-      height: clamp(13rem, 40vmin, 30rem);
-      width: clamp(13rem, 40vmin, 30rem);
-      object-fit: cover;
-      border-radius: 50%;
+    figure {
+      position: relative;
 
-      @media screen and (max-height: 500px) {
-        height: 10rem;
-        width: 10rem;
+      a.social {
+        background-color: #fff;
+        position: absolute;
+        display: block;
+        height: min(12.5vmin, 5rem);
+        width: min(12.5vmin, 5rem);
+        border-radius: 50%;
+        bottom: 0;
+        right: 0;
+        padding: 0;
+
+        @media (prefers-color-scheme: dark) {
+          filter: invert(1);
+        }
+
+        img {
+          height: inherit;
+          width: inherit;
+          object-fit: cover;
+        }
+      }
+
+      img {
+        height: clamp(13rem, 40vmin, 30rem);
+        width: clamp(13rem, 40vmin, 30rem);
+        object-fit: cover;
+        border-radius: 50%;
+
+        @media screen and (max-height: 500px) {
+          height: 10rem;
+          width: 10rem;
+        }
       }
     }
   }
