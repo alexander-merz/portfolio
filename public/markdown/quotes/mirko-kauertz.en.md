@@ -4,7 +4,7 @@
 
 <div class="quotee">
 
-### [Mirko Kauertz](https://www.xing.com/profile/Mirko_Kauertz/cv)
+### <a href="https://www.xing.com/profile/Mirko_Kauertz/cv" target="_blank">Mirko Kauertz</a>
 
 IT Consultant
 

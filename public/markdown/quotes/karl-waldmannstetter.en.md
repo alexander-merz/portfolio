@@ -4,7 +4,7 @@
 
 <div class="quotee">
 
-### [Karl Waldmanstetter](https://www.waldmannstetter.de/#/)
+### <a href="https://www.waldmannstetter.de/#/" target="_blank">Karl Waldmanstetter</a>
 
 Principal Software Architect
 

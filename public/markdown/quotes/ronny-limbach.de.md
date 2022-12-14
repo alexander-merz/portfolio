@@ -4,7 +4,7 @@
 
 <div class="quotee">
 
-### [Ronny Limbach](https://www.xing.com/profile/Ronny_Limbach/cv)
+### <a href="https://www.xing.com/profile/Ronny_Limbach/cv" target="_blank">Ronny Limbach</a>
 
 Bereichsleiter IT
 
