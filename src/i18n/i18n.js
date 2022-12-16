@@ -1,22 +1,40 @@
-const initialTranslations = await import(`./i18n.${navigator.language}.json`).then((m) => m.default)
+const preferredLanguage = getPreferredLanguage()
+const initialTranslations = await import(`./i18n.${preferredLanguage}.json`).then((m) => m.default)
 const localizationTargets = document.querySelectorAll("[data-translate]")
+const translationMap = { [preferredLanguage]: initialTranslations }
+const toggle = document.querySelector("#language-toggle")
 
-const translationMap = { [navigator.language]: initialTranslations }
+function getPreferredLanguage() {
+  return localStorage.getItem("language-preference") ?? navigator.language.slice(0, 2)
+}
 
-function translate() {
+function toggleLanguage(language) {
+  return language.slice(0, 2).toLowerCase() === "en" ? "de" : "en"
+}
+
+function translate(language) {
+  toggle.textContent = toggleLanguage(getPreferredLanguage()).toUpperCase()
+
   for (const target of localizationTargets) {
     const key = target.getAttribute("data-translate") || target.textContent
-    target.textContent = translationMap[navigator.language][key.toUpperCase()]
+    target.textContent = translationMap[language][key.toUpperCase()]
   }
 }
 
-window.addEventListener("languagechange", async () => {
-  if (!Object.keys(translationMap).includes(navigator.language)) {
-    const translations = await import(`./i18n.${navigator.language}.json`).then((m) => m.default)
-    translationMap[navigator.language] = translations
+async function switchLanguage(language) {
+  if (!Object.keys(translationMap).includes(language)) {
+    const translations = await import(`./i18n.${language}.json`).then((m) => m.default)
+    translationMap[language] = translations
   }
 
-  translate()
+  translate(language)
+}
+
+toggle.addEventListener("click", () => {
+  localStorage.setItem("language-preference", toggleLanguage(getPreferredLanguage()))
+  switchLanguage(getPreferredLanguage())
 })
 
-translate()
+window.addEventListener("languagechange", () => switchLanguage(getPreferredLanguage()))
+
+translate(getPreferredLanguage())

@@ -1,42 +1,63 @@
-:root {
-  --brand: var(--blue-9);
-  --gradient: var(--gradient-23);
-
-  --text1: var(--text1-light);
-  --text2: var(--text2-light);
-
-  --surface1: var(--surface1-light);
-  --surface2: var(--surface2-light);
-  --surface3: var(--surface3-light);
-  --surface4: var(--surface4-light);
-
+html {
   --header-height: 5rem;
   --content-height: calc(100vh - var(--header-height));
-
   --rfc-regular: clamp(0.9rem, 2.2vmin, 1.25rem);
+
+  /* light */
+  --gradient-light: var(--gradient-23);
+  --brand-light: var(--blue-9);
+  --text-1-light: var(--gray-8);
+  --text-2-light: var(--gray-7);
+  --surface-1-light: var(--gray-1);
+  --surface-2-light: var(--gray-2);
+  --surface-3-light: var(--gray-3);
+  --surface-4-light: var(--gray-4);
+  --surface-shadow-light: var(--gray-8-hsl);
+  --shadow-strength-light: 2%;
+  --bg-text-opacity-light: 0.07;
+
+  /* dark */
+  --gradient-dark: var(--gradient-22);
+  --brand-dark: var(--cyan-2);
+  --text-1-dark: var(--gray-3);
+  --text-2-dark: var(--gray-5);
+  --surface-1-dark: var(--gray-9);
+  --surface-2-dark: var(--gray-8);
+  --surface-3-dark: var(--gray-7);
+  --surface-4-dark: var(--gray-6);
+  --surface-shadow-dark: var(--gray-12-hsl);
+  --shadow-strength-dark: 80%;
+  --bg-text-opacity-dark: 0.05;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --brand: var(--cyan-2);
-    --gradient: var(--gradient-22);
+[data-theme="light"] {
+  color-scheme: light;
 
-    --text1: var(--text1-dark);
-    --text2: var(--text2-dark);
-
-    --surface1: var(--surface1-dark);
-    --surface2: var(--surface2-dark);
-    --surface3: var(--surface3-dark);
-    --surface4: var(--surface4-dark);
-  }
-
-  #background-text {
-    opacity: 0.05;
-  }
+  --gradient: var(--gradient-light);
+  --brand: var(--brand-light);
+  --text-1: var(--text-1-light);
+  --text-2: var(--text-2-light);
+  --surface-1: var(--surface-1-light);
+  --surface-2: var(--surface-2-light);
+  --surface-3: var(--surface-3-light);
+  --surface-4: var(--surface-4-light);
+  --surface-shadow: var(--surface-shadow-light);
+  --shadow-strength: var(--shadow-strength-light);
+  --bg-text-opacity: var(--bg-text-opacity-light);
 }
 
-@media (prefers-color-scheme: light) {
-  #background-text {
-    opacity: 0.07;
-  }
+[data-theme="dark"] {
+  color-scheme: dark;
+
+  --gradient: var(--gradient-dark);
+  --brand: var(--brand-dark);
+  --text-1: var(--text-1-dark);
+  --text-2: var(--text-2-dark);
+  --surface-1: var(--surface-1-dark);
+  --surface-2: var(--surface-2-dark);
+  --surface-3: var(--surface-3-dark);
+  --surface-4: var(--surface-4-dark);
+  --surface-shadow: var(--surface-shadow-dark);
+  --shadow-strength: var(--shadow-strength-dark);
+  --bg-text-opacity: var(--bg-text-opacity-dark);
 }
