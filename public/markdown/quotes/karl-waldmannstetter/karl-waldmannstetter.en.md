@@ -14,8 +14,8 @@ Principal Software Architect
 
 </div>
 
-> Ich kenne Alexander seit unserer gemeinsamen Zeit bei der Continental Teves AG & Co. oHG.
-> In der Rolle des Frontend-Entwicklers übernahm Alexander federführend die Anbindung mehrerer Backend-Systeme anhand modernster Web-Technologien.
-> Neben seiner sympathischen Art sind vor allem seine Professionalität und sein hoher Anspruch an Qualität hervorzuheben.
-> Ich bin mir sicher, Alexander erwartet eine erfolgreiche Zukunft und stellt für jedes Entwickler-Team eine große Bereicherung dar.
-> Weiterhin alles Gute!
+> I know Alexander since our time at Continental.
+> As our only Frontend Developer, Alexander was in charge to build and connect a realtime Client to multiple Backend systems with the help of most modern web technologies.
+> Besides his sympathetic kind I must emphasize his professionalism and high standards of quality.
+> I am certian, Alexander is an invaluable asset to every development team. He has a bright future ahead.
+> All the best!
