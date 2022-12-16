@@ -60,4 +60,8 @@ html {
   --surface-shadow: var(--surface-shadow-dark);
   --shadow-strength: var(--shadow-strength-dark);
   --bg-text-opacity: var(--bg-text-opacity-dark);
+
+  img {
+    filter: saturate(90%);
+  }
 }
