@@ -28,10 +28,6 @@ section:is(#hero) {
         padding: 0;
         z-index: 1;
 
-        @media (prefers-color-scheme: dark) {
-          filter: invert(1);
-        }
-
         img {
           height: inherit;
           width: inherit;

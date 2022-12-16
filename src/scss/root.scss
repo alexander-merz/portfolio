@@ -30,7 +30,7 @@ html {
   --bg-text-opacity-dark: 0.05;
 }
 
-[data-theme="light"] {
+[data-theme='light'] {
   color-scheme: light;
 
   --gradient: var(--gradient-light);
@@ -46,7 +46,7 @@ html {
   --bg-text-opacity: var(--bg-text-opacity-light);
 }
 
-[data-theme="dark"] {
+[data-theme='dark'] {
   color-scheme: dark;
 
   --gradient: var(--gradient-dark);
@@ -60,6 +60,10 @@ html {
   --surface-shadow: var(--surface-shadow-dark);
   --shadow-strength: var(--shadow-strength-dark);
   --bg-text-opacity: var(--bg-text-opacity-dark);
+
+  a.social {
+    filter: invert(1);
+  }
 
   img {
     filter: saturate(90%);
