@@ -163,7 +163,7 @@ section:is(#projects) {
       margin-block: 0.5rem;
 
       li:not(:last-child)::after {
-        content: ",";
+        content: ',';
         margin-inline-end: 0.25rem;
       }
     }

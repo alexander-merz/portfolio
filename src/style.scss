@@ -1,15 +1,15 @@
-@import "open-props/style";
-@import "open-props/normalize";
+@import 'open-props/style';
+@import 'open-props/normalize';
 
-@import "/src/scss/root.scss";
+@import '/src/scss/root.scss';
 
-@import "/src/scss/background.scss";
-@import "/src/scss/hero.section.scss";
-@import "/src/scss/tooltip.scss";
-@import "/src/scss/career.section.scss";
-@import "/src/scss/tech.section.scss";
-@import "/src/scss/quotes.section.scss";
-@import "/src/scss/projects.section.scss";
+@import '/src/scss/background.scss';
+@import '/src/scss/hero.section.scss';
+@import '/src/scss/tooltip.scss';
+@import '/src/scss/career.section.scss';
+@import '/src/scss/tech.section.scss';
+@import '/src/scss/quotes.section.scss';
+@import '/src/scss/projects.section.scss';
 
 @keyframes fadeIn {
   from {

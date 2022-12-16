@@ -13,12 +13,12 @@
 [data-tooltip] {
   position: relative;
 
-  &[data-tooltip-position="left"]::after {
+  &[data-tooltip-position='left']::after {
     left: 0;
     border-radius: 0 var(--radius-2) var(--radius-2) var(--radius-2);
   }
 
-  &[data-tooltip-position="right"]::after {
+  &[data-tooltip-position='right']::after {
     left: unset;
     right: 0;
     border-radius: var(--radius-2) 0 var(--radius-2) var(--radius-2);
