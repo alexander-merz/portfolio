@@ -16,8 +16,15 @@ function translate(language) {
   toggle.textContent = toggleLanguage(getPreferredLanguage()).toUpperCase()
 
   for (const target of localizationTargets) {
-    const key = target.getAttribute("data-translate") || target.textContent
-    target.textContent = translationMap[language][key.toUpperCase()]
+    let key
+
+    if (target.getAttribute("data-translate")) {
+      key = target.getAttribute("data-translate")
+      target.textContent = translationMap[language][key.toUpperCase()]
+    } else if (target.getAttribute("data-translate-tooltip") && target.getAttribute("data-tooltip")) {
+      key = target.getAttribute("data-translate-tooltip")
+      target.setAttribute("data-tooltip", translationMap[language][key.toUpperCase()])
+    }
   }
 }
 

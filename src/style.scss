@@ -5,6 +5,7 @@
 
 @import "/src/scss/background.scss";
 @import "/src/scss/hero.section.scss";
+@import "/src/scss/tooltip.scss";
 @import "/src/scss/career.section.scss";
 @import "/src/scss/tech.section.scss";
 @import "/src/scss/quotes.section.scss";
@@ -92,7 +93,6 @@ header {
   display: flex;
   align-items: center;
   padding-inline: 2rem;
-  gap: 1.5rem;
 
   button {
     background: transparent;
@@ -178,7 +178,12 @@ button {
 }
 
 #language-toggle {
-  padding: 0.5rem 1rem;
+  border: 1px solid var(--surface-4);
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin-inline-end: 0.5rem;
+  padding: 0.25rem 0.5rem;
 }
 
 #background-text {
