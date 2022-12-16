@@ -14,6 +14,6 @@ Head of IT
 
 </div>
 
-> Alexander hat als Werkstudent von Beginn an mit seiner positiven Ausstrahlung das IT-Team der BKK Linde bereichert.
-> Seine Fähigkeiten, neue Inhalte und Themengebiete zielführend in Projekten zu erarbeiten und einzusetzen sind herausragend.
-> Für seine persönliche Weiterentwicklung wünsche ich Alexander nur das Beste!
+> As a working student, Alexander brought positivity to the IT department the moment he had joined us.
+> His unique skill set allows him to effectively dig into any topic and overcome obstacles all by himself. He exceeds in applying what he had just learned.
+> I wish Alexander the best of luck for his personal development!
