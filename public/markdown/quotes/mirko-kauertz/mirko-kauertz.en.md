@@ -14,7 +14,7 @@ IT Consultant
 
 </div>
 
-> Alexander habe ich damals bei einem Projekt der BKK Linde kennengelernt.
-> Nachdem sich unsere Wege für 2 Jahre getrennt hatten, konnte ich ihn erneut bei der BCM als meinen ersten Menteé begrüßen.
-> Alexander ist ein sehr guter Kollege, super sympathischer Mensch und sticht fachlich aus der Masse heraus.
-> Ich wünsche Ihm das Beste für seine Zukunft, egal wie sein Weg aussehen wird.
+> I met Alexander during a project of mine at BKK Linde.
+> Two years after our ways have parted, I was thrilled to welcome Alexander to BCM Solutions, as my very first mentee.
+> Alexander is a great colleague, friend and sympathetic human being that stands out professionally.
+> I wish him all the best for his future regardless of what path he is taking.
