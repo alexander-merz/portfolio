@@ -3,6 +3,6 @@ Das Projekt ist eine Kooperation zwischen dem <a href="https://www.v-s-b.de/" ta
 Studierende ihren Weg zur Hochschule aufzeichnen. Zum Zeitpunkt meines Beitritts stand das Projektteam vor
 der Herausforderung den rapid wachsenden Daten&shy;bestand einer Datenanalyse zu unterziehen. Innerhalb von sechs
 Monaten arbeitete ich selbstständig an einer Full-Stack-Lösung, die komplexe SQL-Datenbank&shy;abfragen und
-eine webbasierte Visualisierung von Geodaten vereint. NorOvA Analytics ist imstande Strecken tabellarisch
+eine webbasierte Visualisierung von Geodaten vereint. <em>NorOvA Analytics</em> ist imstande Strecken tabellarisch
 und auf einer interaktiven Karte abzubilden, Daten nach Zeit und Raum zu filtern und auf gezeichnete
-Vektoren zu reagieren.
+Vektoren zu reagieren (<a href="public/images/norova-analytics.jpg" target="_blank">Bild</a>).
