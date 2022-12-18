@@ -1,54 +1,58 @@
-const preferredLanguage = getPreferredLanguage()
-const initialTranslations = await import(`./i18n.${preferredLanguage}.json`).then((m) => m.default)
-const translationMap = { [preferredLanguage]: initialTranslations }
+enableInternationalization()
 
-const localizationTargets = document.querySelectorAll('[data-translate]')
-const languageToggle = document.querySelector('#language-toggle')
-const markdowns = document.querySelectorAll('wc-markdown')
+async function enableInternationalization() {
+  const preferredLanguage = getPreferredLanguage()
+  const initialTranslations = await import(`./i18n.${preferredLanguage}.json`).then((m) => m.default)
+  const translationMap = { [preferredLanguage]: initialTranslations }
 
-function getPreferredLanguage() {
-  return localStorage.getItem('language-preference') ?? navigator.language.slice(0, 2)
-}
+  const localizationTargets = document.querySelectorAll('[data-translate]')
+  const languageToggle = document.querySelector('#language-toggle')
+  const markdowns = document.querySelectorAll('wc-markdown')
 
-function toggleLanguage(language) {
-  return language.slice(0, 2).toLowerCase() === 'en' ? 'de' : 'en'
-}
+  function getPreferredLanguage() {
+    return localStorage.getItem('language-preference') ?? navigator.language.slice(0, 2)
+  }
 
-function translate(language) {
-  languageToggle.textContent = toggleLanguage(getPreferredLanguage()).toUpperCase()
+  function toggleLanguage(language) {
+    return language.slice(0, 2).toLowerCase() === 'en' ? 'de' : 'en'
+  }
 
-  for (const target of localizationTargets) {
-    let key
+  function translate(language) {
+    languageToggle.textContent = toggleLanguage(getPreferredLanguage()).toUpperCase()
 
-    if (target.getAttribute('data-translate')) {
-      key = target.getAttribute('data-translate')
-      target.textContent = translationMap[language][key.toUpperCase()]
-    } else if (target.getAttribute('data-translate-tooltip') && target.getAttribute('data-tooltip')) {
-      key = target.getAttribute('data-translate-tooltip')
-      target.setAttribute('data-tooltip', translationMap[language][key.toUpperCase()])
+    for (const target of localizationTargets) {
+      let key
+
+      if (target.getAttribute('data-translate')) {
+        key = target.getAttribute('data-translate')
+        target.textContent = translationMap[language][key.toUpperCase()]
+      } else if (target.getAttribute('data-translate-tooltip') && target.getAttribute('data-tooltip')) {
+        key = target.getAttribute('data-translate-tooltip')
+        target.setAttribute('data-tooltip', translationMap[language][key.toUpperCase()])
+      }
+    }
+
+    for (const markdown of markdowns) {
+      const [name] = markdown.src.split('.')
+      markdown.src = `${name}.${language}.md`
     }
   }
 
-  for (const markdown of markdowns) {
-    const [name] = markdown.src.split('.')
-    markdown.src = `${name}.${language}.md`
-  }
-}
+  async function switchLanguage(language) {
+    if (!Object.keys(translationMap).includes(language)) {
+      const translations = await import(`./i18n.${language}.json`).then((m) => m.default)
+      translationMap[language] = translations
+    }
 
-async function switchLanguage(language) {
-  if (!Object.keys(translationMap).includes(language)) {
-    const translations = await import(`./i18n.${language}.json`).then((m) => m.default)
-    translationMap[language] = translations
+    translate(language)
   }
 
-  translate(language)
+  languageToggle.addEventListener('click', () => {
+    localStorage.setItem('language-preference', toggleLanguage(getPreferredLanguage()))
+    switchLanguage(getPreferredLanguage())
+  })
+
+  window.addEventListener('languagechange', () => switchLanguage(getPreferredLanguage()))
+
+  translate(getPreferredLanguage())
 }
-
-languageToggle.addEventListener('click', () => {
-  localStorage.setItem('language-preference', toggleLanguage(getPreferredLanguage()))
-  switchLanguage(getPreferredLanguage())
-})
-
-window.addEventListener('languagechange', () => switchLanguage(getPreferredLanguage()))
-
-translate(getPreferredLanguage())
