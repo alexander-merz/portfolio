@@ -14,7 +14,7 @@ Frontend Developer
 
 </div>
 
-> Ich habe selten einen so effizienten Entwickler gesehen wie Alexander.
+> Ich habe selten einen so effizienten Entwickler getroffen wie Alex.
 > Wir haben für ein ganzes Jahr im selben Team gearbeitet und sein Fortschritt war unverkennbar.
-> Er ist ein sehr freundlicher und hilfsbereiter Kollege, der nie zögert auf andere einzugehen.
-> Für jeden der nach einem führungsstarken Entwickler sucht: Alexander ist der Richtige für den Job.
+> Er ist ein sehr freundlicher Kollege und allseits bereit zu helfen.
+> Für jeden der nach einem führungsstarken Entwickler sucht: Alex ist der Richtige für den Job.
