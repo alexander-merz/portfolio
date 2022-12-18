@@ -11,7 +11,7 @@
       float: none !important;
       margin: 1rem 0 !important;
 
-      img {
+      a {
         transform: none !important;
       }
     }
@@ -53,7 +53,7 @@ section:is(#projects) {
         margin: 2rem;
         margin-right: 0;
 
-        img {
+        a {
           transform: rotate3d(1, -1, 0.5, 0.05turn);
         }
       }
@@ -81,7 +81,7 @@ section:is(#projects) {
         margin: 2rem;
         margin-left: 0;
 
-        img {
+        a {
           transform: rotate3d(1, 1, -0.5, 0.05turn);
         }
       }
@@ -179,13 +179,16 @@ section:is(#projects) {
     figure {
       perspective: 500px;
 
-      img {
-        width: clamp(300px, 38vw, 700px);
-        height: auto;
-        box-shadow: 0 0 0 2pt var(--text-2);
-
-        object-fit: cover;
+      a {
         border-radius: 1rem;
+
+        img {
+          object-fit: cover;
+          border-radius: inherit;
+          box-shadow: 0 0 0 2pt var(--text-2);
+          width: clamp(300px, 38vw, 700px);
+          height: auto;
+        }
       }
     }
   }
