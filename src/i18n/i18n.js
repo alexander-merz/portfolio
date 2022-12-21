@@ -18,6 +18,7 @@ async function enableInternationalization() {
   }
 
   function translate(language) {
+    document.firstElementChild.lang = language
     languageToggle.textContent = toggleLanguage(getPreferredLanguage()).toUpperCase()
 
     for (const target of localizationTargets) {
