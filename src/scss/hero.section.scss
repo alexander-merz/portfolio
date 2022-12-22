@@ -1,8 +1,7 @@
 section:is(#hero) {
   display: grid;
   place-items: center;
-  min-height: unset;
-  height: var(--content-height);
+  min-height: var(--content-height);
 
   .profile {
     position: relative;

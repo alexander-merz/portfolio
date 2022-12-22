@@ -90,7 +90,7 @@ li {
 }
 
 header {
-  height: var(--header-height);
+  min-height: var(--header-height);
   display: flex;
   align-items: center;
   padding-inline: 2rem;
@@ -104,6 +104,7 @@ header {
     font-size: 1.5rem;
     flex: 1;
     display: flex;
+    flex-wrap: wrap;
     gap: 1rem;
     height: 100%;
 
@@ -124,8 +125,6 @@ header {
 }
 
 main {
-  max-height: var(--content-height);
-
   section {
     position: relative;
     margin: auto;
