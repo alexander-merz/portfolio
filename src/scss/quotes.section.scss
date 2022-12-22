@@ -19,6 +19,10 @@ section:is(#quotes) {
         margin: auto 0;
       }
 
+      small {
+        display: flex;
+      }
+
       img {
         height: min(7.5rem, 20vmin);
         width: min(7.5rem, 20vmin);

@@ -9,6 +9,11 @@ section:is(#career) {
     width: 100%;
     gap: 1rem;
 
+    div {
+      display: flex;
+      flex-direction: column;
+    }
+
     li {
       display: grid;
       gap: min(4vw, 2rem);

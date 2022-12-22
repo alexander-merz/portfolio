@@ -101,10 +101,11 @@ section:is(#projects) {
       column-gap: 0.5rem;
 
       .chip {
-        color: var(--surface-1);
+        color: black;
 
         &.angular {
           background-color: rgb(206, 9, 47);
+          color: white;
         }
 
         &.leaflet {
@@ -117,6 +118,7 @@ section:is(#projects) {
 
         &.rxjs {
           background-color: rgb(216, 31, 132);
+          color: white;
         }
 
         &.node {
