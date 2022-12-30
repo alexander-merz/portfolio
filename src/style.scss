@@ -21,7 +21,7 @@
 }
 
 html {
-  animation: fadeIn 100ms;
+  animation: fadeIn 500ms;
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
@@ -198,6 +198,7 @@ button {
   background: var(--surface-3);
   cursor: default;
   height: fit-content;
+  font-size: calc(var(--rfc-regular) * 0.85);
   font-weight: 600;
   padding: max(0.5vmin, 0.5rem) max(1vmin, 1rem);
   border-radius: 50px;

@@ -1,5 +1,5 @@
 @mixin project-article-tablet-down {
-  @media screen and (max-width: 1280px) {
+  @media screen and (max-width: 1024px) {
     text-align: center;
 
     h2,
@@ -43,7 +43,7 @@ section:is(#projects) {
       ul {
         justify-content: flex-start;
 
-        @media screen and (max-width: 1280px) {
+        @media screen and (max-width: 1024px) {
           justify-content: center;
         }
       }
@@ -71,7 +71,7 @@ section:is(#projects) {
       ul {
         justify-content: flex-end;
 
-        @media screen and (max-width: 1280px) {
+        @media screen and (max-width: 1024px) {
           justify-content: center;
         }
       }
