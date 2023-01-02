@@ -11,8 +11,8 @@
       float: none !important;
       margin: 1rem 0 !important;
 
-      a {
-        transform: none !important;
+      a.mobile {
+        display: none;
       }
     }
 
@@ -33,6 +33,7 @@ section:is(#projects) {
   article {
     padding: 5vmin 0;
     max-width: 1480px;
+    min-height: 20em;
     margin: auto;
 
     &:nth-child(even) {
@@ -53,8 +54,8 @@ section:is(#projects) {
         margin: 2rem;
         margin-right: 0;
 
-        a {
-          transform: rotate3d(1, -1, 0.5, 0.05turn);
+        a.mobile {
+          right: -5%;
         }
       }
 
@@ -78,11 +79,11 @@ section:is(#projects) {
 
       figure {
         float: left;
-        margin: 2rem;
+        margin: 0 2rem 2rem 0;
         margin-left: 0;
 
-        a {
-          transform: rotate3d(1, 1, -0.5, 0.05turn);
+        a.mobile {
+          left: -5%;
         }
       }
 
@@ -179,14 +180,24 @@ section:is(#projects) {
     }
 
     figure {
-      perspective: 500px;
+      position: relative;
 
       a {
         border-radius: 1rem;
 
+        &.mobile {
+          position: absolute;
+          top: 25%;
+
+          img {
+            width: clamp(100px, 12.5vw, 200px);
+            object-fit: contain;
+          }
+        }
+
         img {
           object-fit: cover;
-          border-radius: inherit;
+          border-radius: 4px;
           box-shadow: 0 0 0 2pt var(--text-2);
           width: clamp(300px, 38vw, 700px);
           height: auto;
