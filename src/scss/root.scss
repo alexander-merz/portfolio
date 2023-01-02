@@ -28,6 +28,10 @@ html {
   --surface-shadow-dark: var(--gray-12-hsl);
   --shadow-strength-dark: 80%;
   --bg-text-opacity-dark: 0.05;
+
+  .text-scheme-based-inverted {
+    color: black !important;
+  }
 }
 
 [data-theme='light'] {
@@ -67,5 +71,9 @@ html {
 
   img {
     filter: saturate(90%);
+  }
+
+  .text-scheme-based-inverted {
+    color: white !important;
   }
 }
