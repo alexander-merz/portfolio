@@ -8,6 +8,7 @@ section:is(#tech-stack) {
     gap: min(10vmin, 5rem);
 
     li {
+      flex: 1 1 17.5vmin;
       height: inherit;
       display: flex;
       flex-direction: column;
@@ -18,6 +19,11 @@ section:is(#tech-stack) {
       img {
         height: min(10rem, 17.5vmin);
         width: min(10rem, 17.5vmin);
+      }
+
+      span {
+        line-height: 1;
+        text-align: center;
       }
     }
   }
