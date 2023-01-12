@@ -1,4 +1,14 @@
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.05;
+  }
+}
+
 #background-text {
+  animation: fadeIn 5s;
   user-select: none;
   position: fixed;
   top: -5%;

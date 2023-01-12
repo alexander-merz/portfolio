@@ -11,17 +11,7 @@
 @import '/src/scss/quotes.section.scss';
 @import '/src/scss/projects.section.scss';
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
 html {
-  animation: fadeIn 500ms;
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
