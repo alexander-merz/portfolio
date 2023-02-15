@@ -118,7 +118,6 @@ main {
   section {
     position: relative;
     margin: auto;
-    min-height: 100vh;
     max-width: min(1500px, 80vw);
     padding-block: 5vmin;
 
@@ -126,10 +125,10 @@ main {
       max-width: 90vw;
     }
 
-    > h1 {
+    > h2 {
       text-align: center;
-      margin: auto;
-      margin-bottom: 10vmin;
+      margin-block: 10vmin;
+      margin-inline: auto;
     }
   }
 }
