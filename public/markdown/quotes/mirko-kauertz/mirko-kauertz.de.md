@@ -1,6 +1,6 @@
 <div class="quote">
 
-![Mirko Kauertz](/images/mirko-kauertz.jpg)
+![Mirko Kauertz](/images/mirko-kauertz.webp)
 
 <div class="quotee">
 

@@ -1,6 +1,6 @@
 <div class="quote">
 
-![Karl Waldmannstetter](/images/Karl_Waldmannstetter.jpg)
+![Karl Waldmannstetter](/images/Karl_Waldmannstetter.webp)
 
 <div class="quotee">
 

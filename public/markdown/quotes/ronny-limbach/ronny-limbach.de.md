@@ -1,6 +1,6 @@
 <div class="quote">
 
-![Ronny Limbach](/images/ronny-limbach.jpeg)
+![Ronny Limbach](/images/ronny-limbach.webp)
 
 <div class="quotee">
 
