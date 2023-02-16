@@ -34,6 +34,8 @@
     <script type="module" src="/node_modules/@vanillawc/wc-markdown/components/prism-typescript.js"></script>
     <script type="module" src="/src/i18n/i18n.js"></script>
     <script type="module" src="/src/theme/theme.js"></script>
+    <!-- Styled (installed locally) -->
+    <script src="node_modules/web-vitals-element/dist/web-vitals-element.styled.min.js"></script>
   </head>
   <body>
     <header>
@@ -433,4 +435,19 @@
       </section>
     </main>
   </body>
+
+  <footer>
+    <section class="grid">
+      <h3 style="text-align: center">
+        <span data-translate="POWERED_BY"></span>
+        <br />
+        <span>
+          <a href="https://open-props.style/" target="_blank">OpenProps</a> &
+          <a href="https://www.npmjs.com/package/@vanillawc/wc-markdown" target="_blank">wc-markdown</a>
+        </span>
+      </h3>
+      <br />
+      <web-vitals></web-vitals>
+    </section>
+  </footer>
 </html>

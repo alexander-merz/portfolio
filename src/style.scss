@@ -133,6 +133,10 @@ main {
   }
 }
 
+footer {
+  padding-bottom: 10vmin;
+}
+
 wc-markdown {
   max-width: inherit;
   font-family: var(--font-sans);
@@ -228,6 +232,16 @@ button {
   border-radius: 0;
   transform: rotate(45deg);
   background: var(--brand);
+}
+
+.grid {
+  display: grid;
+  place-items: center;
+}
+
+// hide CLS
+web-vitals dl div:first-of-type {
+  display: none;
 }
 
 @media screen and (max-width: 300px) {
