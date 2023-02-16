@@ -17,7 +17,6 @@ function setPreference() {
 function reflectPreference() {
   meta.content = theme === 'light' ? '#f1f3f5' : '#212529'
   document.firstElementChild.setAttribute('data-theme', theme)
-  toggle.setAttribute('aria-live', theme)
   toggle.textContent = theme === 'light' ? '🌕' : '☀️'
 }
 
