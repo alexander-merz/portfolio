@@ -7,7 +7,7 @@ async function enableInternationalization() {
 
   const localizationTargets = document.querySelectorAll('[data-translate]')
   const languageToggle = document.querySelector('#language-toggle')
-  const markdowns = document.querySelectorAll('wc-markdown')
+  const markdowns = document.querySelectorAll('wc-markdown[src]')
 
   function getPreferredLanguage() {
     return localStorage.getItem('language-preference') ?? navigator.language.slice(0, 2)
