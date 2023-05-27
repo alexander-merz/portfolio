@@ -67,6 +67,11 @@ a {
     color: var(--brand);
     text-decoration-color: var(--brand);
   }
+
+  &.external::after {
+    content: '↗';
+    margin-inline-start: 0.25rem;
+  }
 }
 
 ul,
@@ -100,6 +105,12 @@ header {
 
     a {
       text-decoration: none;
+    }
+  }
+
+  @media screen and (max-width: 764px) {
+    nav {
+      font-size: 1.25rem;
     }
   }
 
