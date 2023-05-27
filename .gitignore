@@ -1,6 +1,3 @@
 /dist
 /node_modules
 /readme.md
-
-/server/node_modules
-/server/.env
