@@ -12,6 +12,15 @@ section:is(#hero) {
     text-align: center;
     gap: 10vmin;
 
+    .profile-information {
+      display: grid;
+      gap: 1.25rem;
+
+      * {
+        line-height: 1;
+      }
+    }
+
     figure {
       position: relative;
 
