@@ -2,7 +2,7 @@ enableInternationalization()
 
 async function enableInternationalization() {
   const preferredLanguage = getPreferredLanguage()
-  const initialTranslations = await import(`./i18n.${preferredLanguage}.json`).then((m) => m.default)
+  const initialTranslations = await import(`../i18n/i18n.${preferredLanguage}.json`).then((m) => m.default)
   const translationMap = { [preferredLanguage]: initialTranslations }
 
   const localizationTargets = document.querySelectorAll('[data-translate]')
@@ -41,7 +41,7 @@ async function enableInternationalization() {
 
   async function switchLanguage(language) {
     if (!Object.keys(translationMap).includes(language)) {
-      const translations = await import(`./i18n.${language}.json`).then((m) => m.default)
+      const translations = await import(`../i18n/i18n.${language}.json`).then((m) => m.default)
       translationMap[language] = translations
     }
 

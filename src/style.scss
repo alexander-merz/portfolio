@@ -144,7 +144,7 @@ main {
 
     > h2 {
       text-align: center;
-      margin-block: 10vmin;
+      margin-block: 5vmin 10vmin;
       margin-inline: auto;
     }
   }
@@ -198,6 +198,17 @@ button {
 
 #background-text {
   opacity: var(--bg-text-opacity);
+}
+
+#current-job-duration {
+  font-style: normal;
+
+  &::before {
+    content: ' (';
+  }
+  &::after {
+    content: ')';
+  }
 }
 
 .brand {
