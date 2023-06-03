@@ -219,8 +219,7 @@ button {
 }
 
 .chip {
-  background: var(--surface-1);
-  outline: 1px solid;
+  background: var(--surface-2);
   cursor: default;
   height: fit-content;
   font-size: calc(var(--rfc-regular) * 0.85);
