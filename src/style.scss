@@ -5,6 +5,7 @@
 
 @import '/src/scss/background.scss';
 @import '/src/scss/hero.section.scss';
+@import '/src/scss/facts.section.scss';
 @import '/src/scss/tooltip.scss';
 @import '/src/scss/career.section.scss';
 @import '/src/scss/tech.section.scss';
@@ -226,6 +227,10 @@ button {
   font-weight: 600;
   padding: max(0.5vmin, 0.5rem) max(1vmin, 1rem);
   border-radius: 50px;
+
+  &.shadow {
+    box-shadow: var(--shadow-2);
+  }
 }
 
 .gradient {

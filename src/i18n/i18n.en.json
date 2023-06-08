@@ -21,5 +21,14 @@
   "MARCH": "March",
   "FINAL_GRADE": "Final grade",
   "YEARS": "Years",
-  "GERMANY": "Germany"
+  "GERMANY": "Germany",
+  "AT_A_GLANCE": "At a Glance",
+  "SOFTWARE_DEVELOPER": "Software Developer",
+  "YEARS_OF_EXPERIENCE": "Years of experience",
+  "GERMAN_NATIONAL": "German National",
+  "FLUENT_IN_ENGLISH": "Fluent in English",
+  "FULL_TIME": "Full-time",
+  "PART_TIME": "Part-time",
+  "CONSULTANT": "Consultant",
+  "AT": "@"
 }

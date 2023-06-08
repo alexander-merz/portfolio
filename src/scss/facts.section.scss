@@ -1,0 +1,19 @@
+#facts {
+  ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+
+    li {
+      font-size: clamp(1rem, calc(var(--font-size-1) + 0.5vmin), 1.5rem);
+      color: var(--text-2);
+      padding-inline: 1.5rem;
+      text-align: center;
+
+      .emoji {
+        margin-right: 0.5rem;
+      }
+    }
+  }
+}
