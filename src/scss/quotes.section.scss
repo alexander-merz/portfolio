@@ -35,6 +35,10 @@ section:is(#quotes) {
       blockquote {
         padding-block: 0;
         padding-inline: 1rem 0;
+
+        @media screen and (max-width: 425px) {
+          border-inline-start-width: 0;
+        }
       }
 
       @media screen and (max-width: 600px) {
