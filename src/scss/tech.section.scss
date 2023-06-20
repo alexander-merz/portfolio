@@ -1,4 +1,8 @@
 section:is(#tech-stack) {
+  @media print {
+    min-height: 100vh;
+  }
+
   ul.primary-tech {
     width: 100%;
     padding: 5vmin 10vmin;
@@ -6,6 +10,12 @@ section:is(#tech-stack) {
     flex-wrap: wrap;
     justify-content: center;
     gap: min(10vmin, 5rem);
+
+    @media print {
+      padding: 0;
+      gap: 0;
+      row-gap: 5vmin;
+    }
 
     li {
       flex: 1 1 17.5vmin;
@@ -19,6 +29,11 @@ section:is(#tech-stack) {
       img {
         height: min(10rem, 17.5vmin);
         width: min(10rem, 17.5vmin);
+
+        @media print {
+          height: 6rem;
+          width: 6rem;
+        }
       }
 
       span {
@@ -35,5 +50,9 @@ section:is(#tech-stack) {
     gap: 5vmin;
     width: 90%;
     margin: 2rem auto 0;
+
+    @media print {
+      margin-top: 10vmin;
+    }
   }
 }

@@ -19,6 +19,10 @@ section:is(#career) {
       grid-template-columns: 40% 60%;
       max-inline-size: none;
 
+      @media print {
+        grid-template-columns: 33% 67%;
+      }
+
       @media screen and (max-width: 768px) {
         grid-template-columns: 20vw 1fr;
       }

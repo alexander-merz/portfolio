@@ -5,8 +5,24 @@ section:is(#quotes) {
     justify-content: center;
     gap: max(10vmin, 3rem);
 
+    @media print {
+      gap: 0;
+
+      li:first-of-type {
+        margin-bottom: 5rem;
+      }
+
+      li:nth-child(odd):not(:first-of-type) {
+        margin-top: 5rem;
+      }
+    }
+
     li {
       max-inline-size: unset;
+
+      &:nth-child(even) {
+        page-break-after: always;
+      }
 
       .quote {
         display: flex;

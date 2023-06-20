@@ -1,5 +1,5 @@
 @mixin project-article-tablet-down {
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: 1024px), print {
     text-align: center;
 
     h2,
@@ -30,11 +30,23 @@
 }
 
 section:is(#projects) {
+  @media print {
+    h2.gradient {
+      margin-bottom: 0;
+    }
+  }
+
   article {
     padding: 5vmin 0;
     max-width: 1480px;
     min-height: 20em;
     margin: auto;
+    page-break-after: always;
+
+    @media print {
+      padding: 0;
+      margin-top: 5vh;
+    }
 
     &:nth-child(even) {
       @include project-article-tablet-down;
@@ -44,7 +56,7 @@ section:is(#projects) {
       ul {
         justify-content: flex-start;
 
-        @media screen and (max-width: 1024px) {
+        @media screen and (max-width: 1024px), print {
           justify-content: center;
         }
       }
@@ -76,7 +88,7 @@ section:is(#projects) {
       ul {
         justify-content: flex-end;
 
-        @media screen and (max-width: 1024px) {
+        @media screen and (max-width: 1024px), print {
           justify-content: center;
         }
       }
@@ -104,6 +116,14 @@ section:is(#projects) {
       margin-block: max(1rem, 2vmin);
       row-gap: 1.25rem;
       column-gap: 0.5rem;
+
+      @media print {
+        margin-bottom: 2rem;
+
+        .chip:not(.blockly, .react, .javascript) {
+          color: white;
+        }
+      }
 
       .chip {
         color: black;
@@ -205,6 +225,10 @@ section:is(#projects) {
           box-shadow: 0 0 0 2pt var(--text-2);
           width: clamp(300px, 38vw, 700px);
           height: auto;
+
+          @media print {
+            width: 400px;
+          }
         }
       }
     }

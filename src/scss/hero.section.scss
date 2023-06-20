@@ -3,6 +3,11 @@ section:is(#hero) {
   place-items: center;
   min-height: 85vh;
 
+  @media print {
+    min-height: 50vh;
+    margin-top: 3rem;
+  }
+
   .profile {
     position: relative;
     display: flex;
@@ -36,6 +41,10 @@ section:is(#hero) {
         padding: 0;
         z-index: 1;
 
+        @media print {
+          display: none;
+        }
+
         img {
           height: inherit;
           width: inherit;
@@ -48,6 +57,11 @@ section:is(#hero) {
         width: clamp(13rem, 40vmin, 30rem);
         object-fit: cover;
         border-radius: 50%;
+
+        @media print {
+          height: 20rem;
+          width: 20rem;
+        }
 
         @media screen and (max-height: 500px) {
           height: 10rem;

@@ -1,4 +1,14 @@
 #facts {
+  @media print {
+    h2 {
+      display: none;
+    }
+
+    ul li:last-child {
+      display: none;
+    }
+  }
+
   ul {
     display: flex;
     justify-content: center;

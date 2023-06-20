@@ -17,6 +17,11 @@ html {
   overflow-x: hidden;
 }
 
+body {
+  -webkit-print-color-adjust: exact !important;
+  print-color-adjust: exact !important;
+}
+
 h1,
 h2,
 h3,
@@ -91,6 +96,10 @@ header {
   align-items: center;
   padding-inline: 2rem;
 
+  @media print {
+    display: none;
+  }
+
   button {
     background: transparent;
   }
@@ -146,12 +155,17 @@ main {
       text-align: center;
       margin-block: 5vmin 10vmin;
       margin-inline: auto;
+      text-decoration: underline;
     }
   }
 }
 
 footer {
   padding-bottom: 10vmin;
+
+  @media print {
+    display: none;
+  }
 }
 
 wc-markdown {
@@ -201,6 +215,7 @@ button {
 }
 
 #current-job-duration {
+  display: block;
   font-style: normal;
 
   &::before {
@@ -231,12 +246,27 @@ button {
   &.shadow {
     box-shadow: var(--shadow-2);
   }
+
+  @media print {
+    background: var(--surface-1);
+    font-size: var(--rfc-regular);
+
+    &.shadow {
+      box-shadow: none;
+    }
+  }
 }
 
 .gradient {
   background: var(--gradient);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+
+  @media print {
+    background: unset;
+    -webkit-background-clip: unset;
+    -webkit-text-fill-color: unset;
+  }
 }
 
 .mono {
@@ -268,6 +298,14 @@ button {
 .grid {
   display: grid;
   place-items: center;
+}
+
+.print-only {
+  display: none;
+
+  @media print {
+    display: block;
+  }
 }
 
 // hide CLS
