@@ -1,4 +1,8 @@
 section:is(#quotes) {
+  @media print {
+    order: 1;
+  }
+
   ol {
     display: flex;
     flex-wrap: wrap;

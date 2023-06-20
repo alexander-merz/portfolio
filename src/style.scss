@@ -141,14 +141,18 @@ header {
 }
 
 main {
+  display: flex;
+  flex-direction: column;
+
   section {
     position: relative;
     margin: auto;
-    max-width: min(1500px, 82.5vw);
+    width: 82.5%;
+    max-width: 1500px;
     padding-block: 5vmin;
 
     @media screen and (max-width: 415px) {
-      max-width: 90vw;
+      width: 90%;
     }
 
     > h2 {
