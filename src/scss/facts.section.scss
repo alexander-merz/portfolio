@@ -3,10 +3,6 @@
     h2 {
       display: none;
     }
-
-    ul li:last-child {
-      display: none;
-    }
   }
 
   ul {
@@ -14,6 +10,10 @@
     justify-content: center;
     flex-wrap: wrap;
     gap: 2rem;
+
+    @media print {
+      column-gap: 1rem;
+    }
 
     li {
       font-size: clamp(1rem, calc(var(--font-size-1) + 0.5vmin), 1.5rem);
