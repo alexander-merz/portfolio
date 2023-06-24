@@ -1,4 +1,4 @@
-Nachdem ich den Großteil meiner Karriere unabhängig gearbeitet habe, war ich erpicht darauf eine Rolle in einem größeren Entwicklerteam eines Softwarehauses einzunehmen.
+Nach meiner Zeit als Consultant war ich erpicht darauf eine Rolle in einem größeren Entwicklerteam eines Softwarehauses einzunehmen.
 Aus einer Vielzahl von Gründen entschied ich mich für StudySmarter. Es war mir möglich von überall zu arbeiten und bei einer riesigen Codebase mitzuwirken. Die Produktteams sind international aufgestellt, wodurch ich täglich Englisch sprach.
 Seit Tag eins bin ein stolzes Mitglied von <em>StudyStarters</em>: ein Produktteam, welches sich auf die Conversion und (Re-)aktivierung von neuen Nutzern spezialisiert.
 Zusammen mit meinen 3 bis 4 FE-Peers arbeitete ich stetig an Authentifizierung, dem Onboarding, Contextual Tutorials und ein auf Benachrichtigungen ausgerichteter Study Plan unserer Angular Web App und <a href="https://ionicframework.com/" target="_blank">Ionic</a> Mobile App.
