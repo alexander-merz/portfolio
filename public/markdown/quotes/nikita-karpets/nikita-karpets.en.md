@@ -14,8 +14,8 @@ Frontend Developer
 
 </div>
 
-> It is rare to see such a ridiculously efficient developer as Alex.
+> It is rare to find such an efficient developer as Alex.
 > We've been working in one team for a year and his progress was just out of competition.
-> A very supportive teammate and just a nice person in general.
+> A very supportive teammate and a nice person in general.
 > It was always comfortable to come to him for help.
 > For anyone looking for a high-tier engineer - he's the right guy for you.
