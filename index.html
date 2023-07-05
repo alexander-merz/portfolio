@@ -41,6 +41,14 @@
     <script type="module">
       import '/node_modules/web-vitals-element/dist/web-vitals-element.styled.min.js'
     </script>
+
+    <style type="text/css" media="print">
+      @page {
+        size: auto; /* auto is the initial value */
+        margin: 0; /* this affects the margin in the printer settings */
+      }
+    </style>
+
     <noscript>
       <style>
         #background-text,
@@ -144,9 +152,13 @@
           <li class="chip shadow">
             <span class="emoji">🇬🇧</span><span data-translate="fluent_in_english">Fluent in English</span>
           </li>
+          <li class="chip shadow print-only">
+            <span class="emoji">🌐</span>
+            <a href="https://web-engineering-merz.blog/" target="_blank" data-translate="website">Website</a>
+          </li>
           <li class="chip shadow">
             <span class="emoji">✍️</span>
-            <a href="https://web-engineering-merz.blog/" target="_blank">Blogger</a>
+            <a href="https://web-engineering-merz.blog/" target="_blank">Blog</a>
           </li>
           <li class="chip shadow print-only">
             <span class="emoji">💻</span><a href="https://github.com/alexander-merz">Github</a>
@@ -261,7 +273,7 @@
 
           <li>
             <img src="/images/web-components.svg" alt="" height="160" width="160" />
-            <span>WebComponents</span>
+            <span>Web Components</span>
           </li>
           <li>
             <img src="/images/angular.svg" alt="" height="160" width="160" />
@@ -278,6 +290,7 @@
         </ul>
 
         <ul class="secondary-tech">
+          <li class="chip shadow">Ionic</li>
           <li class="chip shadow">SCSS</li>
           <li class="chip shadow">Bootstrap</li>
           <li class="chip shadow">Jest</li>
@@ -285,16 +298,11 @@
           <li class="chip shadow">NgRx</li>
           <li class="chip shadow">Node.js</li>
           <li class="chip shadow">Express</li>
-          <li class="chip shadow">MySQL</li>
+          <li class="chip shadow">Java</li>
+          <li class="chip shadow">SQL</li>
           <li class="chip shadow">MongoDB</li>
           <li class="chip shadow">Git</li>
-          <li class="chip shadow">Husky</li>
-          <li class="chip shadow">Azure DevOps</li>
           <li class="chip shadow">npm</li>
-          <li class="chip shadow">Webpack</li>
-          <li class="chip shadow">Babel</li>
-          <li class="chip shadow">Gulp</li>
-          <li class="chip shadow">Rollup</li>
           <li class="chip shadow">Vite</li>
           <li class="chip shadow">Stencil</li>
           <li class="chip shadow">Lit</li>

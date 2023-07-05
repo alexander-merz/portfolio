@@ -51,6 +51,11 @@ section:is(#tech-stack) {
     width: 90%;
     margin: 2rem auto 0;
 
+    li {
+      min-width: 5rem;
+      text-align: center;
+    }
+
     @media print {
       margin-top: 10vmin;
     }

@@ -4,7 +4,7 @@ section:is(#hero) {
   min-height: 85vh;
 
   @media print {
-    min-height: 50vh;
+    min-height: auto;
     margin-top: 3rem;
   }
 
@@ -16,6 +16,10 @@ section:is(#hero) {
     align-items: center;
     text-align: center;
     gap: 10vmin;
+
+    @media print {
+      gap: 3rem;
+    }
 
     .profile-information {
       display: grid;
