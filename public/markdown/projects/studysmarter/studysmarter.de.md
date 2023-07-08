@@ -1,6 +1,6 @@
 Nachdem ich Erfahrungen als Berater gesammelt hatte, suchte ich nach einer Gelegenheit, mich einem diversen Entwicklerteam eines vielversprechenden Softwareunternehmens anzuschließen.
 Das Arbeiten in einem Scale-up Unternehmen und die Flexibilität remote zu arbeiten sind Gründe warum ich mich für StudySmarter entschied.
-Darüber hinaus war ich von der Möglichkeit begeistert, zu einer umfangreichen Codebase beizutragen und in einem internationalen Produktteam Fuß zu fassen.
+Ich habe viel dabei gelernt bei einer umfangreichen Codebase mitzuwirken und in einem internationalen Produktteam Fuß zu fassen.
 Als Mitglied des Growth-Teams, das sich auf die Nutzerkonvertierung und Reaktivierung konzentriert, arbeite ich eng mit Produktmanagement, Designern, Qualitätssicherung und meinen 3 bis 4 Entwicklerkollegen zusammen.
 Ich war maßgeblich an der Entwicklung und Pflege von Authentifizierung, Onboarding, kontextuellen Tutorials und einem benachrichtigungsbasierten Lernplan beteiligt.
 In letzter Zeit lag der Fokus auf der Zusammenarbeit mit unseren Website-Entwicklern, um unseren Benutzern ein reibungslosen Registrierungsprozess zu bieten.
