@@ -242,17 +242,12 @@ button {
   background: var(--surface-2);
   cursor: default;
   height: fit-content;
-  font-size: calc(var(--rfc-regular) * 0.85);
+  font-size: clamp(1rem, calc(var(--font-size-1) + 0.5vmin), 1.5rem);
   font-weight: 600;
-  padding: max(0.5vmin, 0.5rem) max(1vmin, 1rem);
+  padding: max(0.5vmin, 0.5rem) max(1.5vmin, 1.5rem);
   border-radius: 50px;
 
-  &.shadow {
-    box-shadow: var(--shadow-2);
-  }
-
   @media print {
-    background: var(--surface-1);
     font-size: var(--rfc-regular);
 
     &.shadow {
@@ -309,6 +304,12 @@ button {
 
   @media print {
     display: block;
+  }
+}
+
+.hide-on-print {
+  @media print {
+    display: none !important;
   }
 }
 

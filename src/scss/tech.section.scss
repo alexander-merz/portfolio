@@ -3,6 +3,11 @@ section:is(#tech-stack) {
     min-height: 100vh;
   }
 
+  h3 {
+    text-align: center;
+    margin-block: min(7.5vmin, 3.75rem);
+  }
+
   ul.primary-tech {
     width: 100%;
     padding: 5vmin 10vmin;
@@ -24,7 +29,7 @@ section:is(#tech-stack) {
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      gap: 1rem;
+      gap: 2rem;
 
       img {
         height: min(10rem, 17.5vmin);
@@ -37,7 +42,6 @@ section:is(#tech-stack) {
       }
 
       span {
-        line-height: 1;
         text-align: center;
       }
     }

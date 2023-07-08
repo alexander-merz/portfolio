@@ -33,29 +33,6 @@ section:is(#hero) {
     figure {
       position: relative;
 
-      a.social {
-        background-color: #fff;
-        position: absolute;
-        display: block;
-        height: min(12.5vmin, 5rem);
-        width: min(12.5vmin, 5rem);
-        border-radius: 50%;
-        bottom: 0;
-        right: 0;
-        padding: 0;
-        z-index: 1;
-
-        @media print {
-          display: none;
-        }
-
-        img {
-          height: inherit;
-          width: inherit;
-          object-fit: cover;
-        }
-      }
-
       img {
         height: clamp(13rem, 40vmin, 30rem);
         width: clamp(13rem, 40vmin, 30rem);

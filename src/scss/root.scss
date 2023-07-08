@@ -47,6 +47,18 @@ html {
   --surface-shadow: var(--surface-shadow-light);
   --shadow-strength: var(--shadow-strength-light);
   --bg-text-opacity: var(--bg-text-opacity-light);
+
+  .chip {
+    background: var(--surface-1);
+
+    &.outlined {
+      outline: 2.5px solid var(--surface-4);
+    }
+
+    @media print {
+      background: var(--surface-0);
+    }
+  }
 }
 
 [data-theme='dark'] {
@@ -74,5 +86,11 @@ html {
 
   .text-scheme-based-inverted {
     color: white !important;
+  }
+
+  .chip {
+    &.shadow {
+      box-shadow: var(--shadow-2);
+    }
   }
 }
