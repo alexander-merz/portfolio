@@ -1,6 +1,6 @@
-Nach meiner Zeit als Consultant war ich erpicht darauf eine Rolle in einem größeren Entwicklerteam eines Softwarehauses einzunehmen.
-Aus einer Vielzahl von Gründen entschied ich mich für StudySmarter. Es war mir möglich von überall zu arbeiten und bei einer riesigen Codebase mitzuwirken. Die Produktteams sind international aufgestellt, wodurch ich täglich Englisch sprach.
-Seit Tag eins bin ein stolzes Mitglied von <em>StudyStarters</em>: ein Produktteam, welches sich auf die Conversion und (Re-)aktivierung von neuen Nutzern spezialisiert.
-Zusammen mit meinen 3 bis 4 FE-Peers arbeitete ich stetig an Authentifizierung, dem Onboarding, Contextual Tutorials und ein auf Benachrichtigungen ausgerichteter Study Plan unserer Angular Web App und <a href="https://ionicframework.com/" target="_blank">Ionic</a> Mobile App.
-Meine größten Beiträge waren zweifelslos die vollständige Überarbeitung unseres Onboardings, sowie das Design einer effektiven Architektur für Contextual Tutorials.
-Mit dem Ziel Ende 2022 zu einem <a href="https://en.wikipedia.org/wiki/Monorepo" target="_blank">Monorepo</a> zu wechseln, wurden beide Features in eine wiederverwendbare Bibliothek ausgelagert.
+Nachdem ich Erfahrungen als Berater gesammelt hatte, suchte ich nach einer Gelegenheit, mich einem diversen Entwicklerteam eines vielversprechenden Softwareunternehmens anzuschließen.
+Das Arbeiten in einem Scale-up Unternehmen und die Flexibilität remote zu arbeiten sind Gründe warum ich mich für StudySmarter entschied.
+Darüber hinaus war ich von der Möglichkeit begeistert, zu einer umfangreichen Codebase beizutragen und in einem internationalen Produktteam Fuß zu fassen.
+Als Mitglied des Growth-Teams, das sich auf die Nutzerkonvertierung und Reaktivierung konzentriert, arbeite ich eng mit Produktmanagement, Designern, Qualitätssicherung und meinen 3 bis 4 Entwicklerkollegen zusammen.
+Ich war maßgeblich an der Entwicklung und Pflege von Authentifizierung, Onboarding, kontextuellen Tutorials und einem benachrichtigungsbasierten Lernplan beteiligt.
+In letzter Zeit lag der Fokus auf der Zusammenarbeit mit unseren Website-Entwicklern, um unseren Benutzern ein reibungslosen Registrierungsprozess zu bieten.
