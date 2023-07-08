@@ -142,6 +142,10 @@ section:is(#projects) {
           color: white;
         }
 
+        &.blockly {
+          background-color: var(--surface-2);
+        }
+
         &.leaflet {
           background-color: rgb(189, 230, 108);
         }
