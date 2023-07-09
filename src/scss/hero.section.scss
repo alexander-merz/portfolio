@@ -42,6 +42,7 @@ section:is(#hero) {
         @media print {
           height: 20rem;
           width: 20rem;
+          object-position: 0% 35%;
         }
 
         @media screen and (max-height: 500px) {
