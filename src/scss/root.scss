@@ -52,7 +52,7 @@ html {
     background: var(--surface-1);
 
     &.outlined {
-      outline: 2.5px solid var(--surface-4);
+      border: 2.5px solid var(--surface-4);
     }
 
     @media print {
