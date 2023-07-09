@@ -31,6 +31,15 @@ section:is(#tech-stack) {
       align-items: center;
       gap: 2rem;
 
+      @media screen and (max-width: 600px), print {
+        gap: 0.5rem;
+
+        .chip {
+          border: none !important;
+          padding-inline: 0;
+        }
+      }
+
       img {
         height: min(10rem, 17.5vmin);
         width: min(10rem, 17.5vmin);
