@@ -17,7 +17,7 @@
   "SWITCH_LANGUAGE": "Switch language",
   "SWITCH_THEME": "Switch theme",
   "POWERED_BY": "This site is powered by",
-  "BSC_BUSINESS_INFORMATION_SYSTEMS": "B.Sc. Business Information Systems",
+  "BUSINESS_INFORMATION_SYSTEMS": "Business Information Systems",
   "MARCH": "March",
   "FINAL_GRADE": "Final grade",
   "YEAR": "Year",
@@ -32,5 +32,6 @@
   "FULL_TIME": "Full-time",
   "PART_TIME": "Part-time",
   "CONSULTANT": "Consultant",
-  "AT": "@"
+  "AT": "@",
+  "EMPLOYERS_REFERENCE": "employer's reference"
 }

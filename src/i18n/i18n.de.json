@@ -17,7 +17,7 @@
   "SWITCH_LANGUAGE": "Sprache wechseln",
   "SWITCH_THEME": "Theme wechseln",
   "POWERED_BY": "Diese Seite ist umgesetzt mittels",
-  "BSC_BUSINESS_INFORMATION_SYSTEMS": "B.Sc. Wirtschaftsinformatik",
+  "BUSINESS_INFORMATION_SYSTEMS": "Wirtschaftsinformatik",
   "MARCH": "März",
   "FINAL_GRADE": "Abschlussnote",
   "YEAR": "Jahr",
@@ -32,5 +32,6 @@
   "FULL_TIME": "Vollzeit",
   "PART_TIME": "Teilzeit",
   "CONSULTANT": "Befristet",
-  "AT": "bei"
+  "AT": "bei",
+  "EMPLOYERS_REFERENCE": "Arbeitszeugnis"
 }
