@@ -244,7 +244,7 @@ button {
   height: fit-content;
   font-size: clamp(1rem, calc(var(--font-size-1) + 0.5vmin), 1.5rem);
   font-weight: 600;
-  padding: max(0.5vmin, 0.5rem) max(1.5vmin, 1.5rem);
+  padding: max(0.5vmin, 0.5rem) max(1.25vmin, 1.25rem);
   border-radius: 50px;
 
   @media print {
