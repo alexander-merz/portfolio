@@ -16,15 +16,20 @@
       }
     }
 
-    .chips {
-      justify-content: center !important;
-    }
-
     p {
       margin: 1.5rem auto;
       max-inline-size: none;
       text-align: left;
       width: 100%;
+    }
+  }
+
+  @media screen and (max-width: 425px) {
+    .chips {
+      justify-content: unset !important;
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      height: 4rem;
     }
   }
 }
