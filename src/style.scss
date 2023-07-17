@@ -119,18 +119,13 @@ header {
   }
 
   @media screen and (max-width: 764px) {
-    nav {
-      font-size: 1.25rem;
-    }
-  }
-
-  @media screen and (max-width: 550px) {
     padding-inline: 1.5rem;
     text-align: center;
     display: block;
     gap: 0;
 
     nav {
+      font-size: 1.25rem;
       display: flex;
       justify-content: center;
       gap: 0.9rem;
@@ -150,6 +145,10 @@ main {
     width: 82.5%;
     max-width: 1500px;
     padding-block: 5vmin;
+
+    &:last-of-type {
+      margin-bottom: 10vmin;
+    }
 
     @media screen and (max-width: 415px) {
       width: 90%;
