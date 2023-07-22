@@ -1,6 +1,10 @@
 section:is(#feedback) {
   @media print {
     order: 1;
+
+    h2 {
+      margin-bottom: 2rem;
+    }
   }
 
   ol {
@@ -13,7 +17,7 @@ section:is(#feedback) {
       gap: 0;
 
       li:first-of-type {
-        margin-bottom: 5rem;
+        margin-bottom: 2.5rem;
       }
 
       li:nth-child(odd):not(:first-of-type) {
