@@ -2,7 +2,7 @@
 const currentJob = document.querySelector('#current-job')
 const currentJobStartDate = Date.parse(currentJob.querySelector('time').getAttribute('datetime'))
 const timeSpentMs = Date.now() - currentJobStartDate
-const timeSpentMonths = Math.round(timeSpentMs / 1000 / 60 / 60 / 24 / 30.4375)
+const timeSpentMonths = Math.ceil(timeSpentMs / 1000 / 60 / 60 / 24 / 30.4375)
 
 const years = Math.floor(timeSpentMonths / 12)
 const months = timeSpentMonths % 12
