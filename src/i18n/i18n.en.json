@@ -20,7 +20,7 @@
   "POWERED_BY": "This site is powered by",
   "BUSINESS_INFORMATION_SYSTEMS": "Business Information Systems",
   "MARCH": "March",
-  "FINAL_GRADE": "Final grade",
+  "FINAL_GRADE": "Final Grade",
   "YEAR": "Year",
   "YEARS": "Years",
   "MONTH": "Month",
@@ -34,5 +34,6 @@
   "PART_TIME": "Part-time",
   "CONTRACTOR": "Contractor",
   "AT": "@",
-  "EMPLOYERS_REFERENCE": "employer's reference"
+  "EMPLOYERS_REFERENCE": "employer's reference",
+  "GRADUATION_CERTIFICATE": "Certificate of Graduation"
 }
