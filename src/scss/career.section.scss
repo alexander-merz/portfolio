@@ -19,8 +19,18 @@ section:is(#career) {
       grid-template-columns: 40% 60%;
       max-inline-size: none;
 
-      @media print {
-        grid-template-columns: 33% 67%;
+        
+        @media print {
+          grid-template-columns: 33% 67%;
+
+          // max 5 stations per page
+          &:nth-child(5n) {
+            margin-bottom: 50%;
+          }
+
+          &:last-child {
+            page-break-after: always;
+          }
       }
 
       @media screen and (max-width: 768px) {

@@ -5,7 +5,7 @@ const timeSpentMs = Date.now() - currentJobStartDate
 const timeSpentMonths = Math.ceil(timeSpentMs / 1000 / 60 / 60 / 24 / 30.4375)
 
 const years = Math.floor(timeSpentMonths / 12)
-const months = timeSpentMonths % 12
+const months = timeSpentMonths % 12 || 1 // show at least 1 month
 
 // Create element containing the calculated time spent at current job
 const timeSpentYearsElement = document.createElement('span')
