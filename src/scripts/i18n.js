@@ -8,6 +8,9 @@ async function enableInternationalization() {
   const localizationTargets = document.querySelectorAll('[data-translate]')
   const languageToggle = document.querySelector('#language-toggle')
   const markdowns = document.querySelectorAll('wc-markdown[src]')
+  const markdownPaths = Array.from(markdowns, (markdown) =>
+    markdown.getAttribute('src').replace(/^\/+/, '').replace(/\.[^.]+\.md$/, ''),
+  )
 
   function getPreferredLanguage() {
     return localStorage.getItem('language-preference') ?? navigator.language.slice(0, 2)
@@ -33,10 +36,9 @@ async function enableInternationalization() {
       }
     }
 
-    for (const markdown of markdowns) {
-      const [name] = markdown.src.split('.')
-      markdown.src = `${name}.${language}.md`
-    }
+    markdowns.forEach((markdown, index) => {
+      markdown.setAttribute('src', `${import.meta.env.BASE_URL}${markdownPaths[index]}.${language}.md`)
+    })
   }
 
   async function switchLanguage(language) {
