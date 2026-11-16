@@ -1,6 +1,6 @@
 <div class="quote">
 
-![Nikita Karpets](/images/nikita-karpets.webp)
+![Nikita Karpets](images/nikita-karpets.webp)
 
 <div class="quotee">
 

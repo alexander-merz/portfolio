@@ -1,6 +1,6 @@
 <div class="quote">
 
-![Elizabeth Alves](/images/elizabeth-alves.jpeg)
+![Elizabeth Alves](images/elizabeth-alves.jpeg)
 
 <div class="quotee">
 
