@@ -1,10 +1,10 @@
-@mixin project-article-tablet-down {
+@mixin work-article-tablet-down {
   @media screen and (max-width: 1024px), print {
     text-align: center;
 
     h2,
     h3 {
-      margin: auto;
+      text-align: center;
     }
 
     figure {
@@ -62,7 +62,7 @@ section:is(#work) {
     }
 
     &:nth-child(even) {
-      @include project-article-tablet-down;
+      @include work-article-tablet-down;
 
       text-align: left;
 
@@ -94,7 +94,7 @@ section:is(#work) {
     }
 
     &:nth-child(odd) {
-      @include project-article-tablet-down;
+      @include work-article-tablet-down;
 
       text-align: right;
 
