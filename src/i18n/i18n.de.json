@@ -34,6 +34,7 @@
   "PART_TIME": "Teilzeit",
   "CONTRACTOR": "Befristet",
   "AT": "bei",
-  "EMPLOYERS_REFERENCE": "Arbeitszeugnis",
-  "GRADUATION_CERTIFICATE": "Abschlusszertifikat"
+  "LETTER_OF_REFERENCE": "Arbeitszeugnis",
+  "GRADUATION_CERTIFICATE": "Abschlusszertifikat",
+  "RESEARCH_ASSOCIATE": "Bachelorand"
 }

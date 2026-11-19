@@ -34,6 +34,7 @@
   "PART_TIME": "Part-time",
   "CONTRACTOR": "Contractor",
   "AT": "@",
-  "EMPLOYERS_REFERENCE": "employer's reference",
-  "GRADUATION_CERTIFICATE": "Certificate of Graduation"
+  "LETTER_OF_REFERENCE": "Letter of Reference",
+  "GRADUATION_CERTIFICATE": "Certificate of Graduation",
+  "RESEARCH_ASSOCIATE": "Research Associate"
 }
