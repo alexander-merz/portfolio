@@ -1,33 +1,47 @@
-// Calculate time spent at current job in years
-const currentJob = document.querySelector('#current-job')
-const currentJobStartDate = Date.parse(currentJob.querySelector('time').getAttribute('datetime'))
-const timeSpentMs = Date.now() - currentJobStartDate
-const timeSpentMonths = Math.ceil(timeSpentMs / 1000 / 60 / 60 / 24 / 30.4375)
+;(() => {
+  // Calculate time spent at current job in years
 
-const years = Math.floor(timeSpentMonths / 12)
-const months = timeSpentMonths % 12 || 1 // show at least 1 month
+  const jobs = document.querySelectorAll('#positions > li')
 
-// Create element containing the calculated time spent at current job
-const timeSpentYearsElement = document.createElement('span')
-timeSpentYearsElement.id = 'current-job-duration'
+  if (jobs.length === 0) return
 
-// Create element containing translation of "months"
-const monthsElement = document.createElement('span')
-monthsElement.setAttribute('data-translate', months > 1 ? 'months' : 'month')
+  const currentJob = jobs[0]
 
-if (years > 0) {
-  // Create element containing translation of "years"
-  const yearsElement = document.createElement('span')
-  yearsElement.setAttribute('data-translate', years > 1 ? 'years' : 'year')
+  if (!currentJob) return
 
-  // Create element containing translation of "and"
-  const andElement = document.createElement('span')
-  andElement.setAttribute('data-translate', 'and')
+  const todayElement = currentJob.querySelector('time[data-translate="today"]')
 
-  timeSpentYearsElement.append(years.toString(), ' ', yearsElement, ' ', andElement, ' ')
-}
+  if (!todayElement) return
 
-timeSpentYearsElement.append(months.toString(), ' ', monthsElement)
+  const currentJobStartDate = Date.parse(currentJob.querySelector('time').getAttribute('datetime'))
+  const timeSpentMs = Date.now() - currentJobStartDate
+  const timeSpentMonths = Math.ceil(timeSpentMs / 1000 / 60 / 60 / 24 / 30.4375)
 
-// Insert the time spent element after the "today" element
-currentJob.querySelector('time[data-translate="today"]').after(timeSpentYearsElement)
+  const years = Math.floor(timeSpentMonths / 12)
+  const months = timeSpentMonths % 12 || 1 // show at least 1 month
+
+  // Create element containing the calculated time spent at current job
+  const timeSpentYearsElement = document.createElement('span')
+  timeSpentYearsElement.id = 'current-job-duration'
+
+  // Create element containing translation of "months"
+  const monthsElement = document.createElement('span')
+  monthsElement.setAttribute('data-translate', months > 1 ? 'months' : 'month')
+
+  if (years > 0) {
+    // Create element containing translation of "years"
+    const yearsElement = document.createElement('span')
+    yearsElement.setAttribute('data-translate', years > 1 ? 'years' : 'year')
+
+    // Create element containing translation of "and"
+    const andElement = document.createElement('span')
+    andElement.setAttribute('data-translate', 'and')
+
+    timeSpentYearsElement.append(years.toString(), ' ', yearsElement, ' ', andElement, ' ')
+  }
+
+  timeSpentYearsElement.append(months.toString(), ' ', monthsElement)
+
+  // Insert the time spent element after the "today" element
+  todayElement.after(timeSpentYearsElement)
+})()
