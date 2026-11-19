@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <title>Alexander Merz, Portfolio</title>
@@ -120,9 +120,7 @@
           <li class="chip shadow outlined">
             <span class="emoji">💼</span>8 <span data-translate="years_of_experience">Years of Experience</span>
           </li>
-          <li class="chip shadow outlined">
-            <span class="emoji">💪</span>TypeScript & Angular</span>
-          </li>
+          <li class="chip shadow outlined"><span class="emoji">💪</span><span>TypeScript & Angular</span></li>
           <li class="chip shadow outlined"><span class="emoji">👨‍🎓</span>Bachelor of Science</li>
           <li class="chip shadow outlined">
             <span class="emoji">📍</span>
@@ -168,8 +166,7 @@
                 <a href="https://studysmarter.de" target="_blank">StudySmarter</a>
               </p>
               <small>
-                <span data-translate="munich">Munich</span>, 
-                <span data-translate="bavaria">Bavaria</span>, 
+                <span data-translate="munich">Munich</span>, <span data-translate="bavaria">Bavaria</span>,
                 <span data-translate="germany">Germany</span>
               </small>
             </div>
@@ -187,8 +184,7 @@
                 <a href="https://studysmarter.de" target="_blank">StudySmarter</a>
               </p>
               <small>
-                <span data-translate="munich">Munich</span>, 
-                <span data-translate="bavaria">Bavaria</span>, 
+                <span data-translate="munich">Munich</span>, <span data-translate="bavaria">Bavaria</span>,
                 <span data-translate="germany">Germany</span>
               </small>
             </div>
@@ -212,7 +208,10 @@
             <img class="bcm-solutions-logo" src="images/bcm.webp" alt="" />
             <div>
               <h3>IT Consultant</h3>
-              <p><time datetime="2020-11">November 2020</time> - <time datetime="2021-10"><span data-translate="october">October</span> 2021</time></p>
+              <p>
+                <time datetime="2020-11">November 2020</time> -
+                <time datetime="2021-10"><span data-translate="october">October</span> 2021</time>
+              </p>
               <p>
                 <span data-translate="full_time">Full-time</span> <span data-translate="at">@</span>
                 <a href="https://bcmsolutions.de/" target="_blank">BCM Solutions</a>
@@ -246,11 +245,11 @@
                 <time datetime="2017-03"><span data-translate="march">March</span> 2017</time> -
                 <time datetime="2020-08">August 2020</time>
               </p>
+              <p><span data-translate="final_grade">Final Grade</span>:&nbsp;<span>1.6 (GPA 3.3)</span></p>
               <p>
-                <span data-translate="final_grade">Final Grade</span>:&nbsp;<span>1.6 (GPA 3.3)</span>
-              </p>
-              <p>
-                <a href="pdfs/graduation-certificate.pdf" target="_blank" data-translate="graduation_certificate">Certificate of Graduation</a>
+                <a href="pdfs/graduation-certificate.pdf" target="_blank" data-translate="graduation_certificate">
+                  Certificate of Graduation
+                </a>
               </p>
               <p>
                 <a href="https://www.hs-furtwangen.de/en/" target="_blank">Hochschule Furtwangen</a>
@@ -265,12 +264,46 @@
         <h2 class="gradient" data-translate="work">Work</h2>
 
         <article>
+          <h2>Frontend Team Lead</h2>
+
+          <ul class="facts">
+            <li>StudySmarter</li>
+            <li data-translate="munich">Munich</li>
+            <li><time datetime="2023-10">10/2023</time> - <time datetime="2026-08">08/2026</time></li>
+          </ul>
+
+          <br />
+
+          <wc-markdown src="markdown/work/studysmarter/frontend-team-lead/text.en.md"></wc-markdown>
+          <noscript>
+            <p>
+              In October 2023, I stepped into the Frontend Team Lead role where I led a small group of developers within
+              a product team. My responsibilities grew from building product features to helping the team plan and
+              deliver them well. I was involved in all aspects of the product development lifecycle: from strategic
+              roadmap planning to release management and monitoring. Line management came with personnel
+              responsibilities, such as training juniors and new-joiners or assisting in the hiring process. While the
+              majority of my day-to-day work continued to be coding, my expertise was required in code reviews,
+              architectural decisions and overall process improvements. With the departure of our Frontend Tech Lead in
+              December 2025, I took on additional tasks to fill the gap. I managed our subscription and pricing
+              experiments via <a href="https://revenuecat.com" target="_blank">RevenueCat</a> and worked closely with
+              Paid Marketing on integrations and data quality. Around that time, the focus shifted heavily towards AI
+              features and tooling. I contributed agent skill files, AI-powered CI jobs and prompt management in
+              <a href="https://langfuse.com" target="_blank">Langfuse</a>. By the time I left StudySmarter in August
+              2026, everyone in the organization was able to ship small to medium-sized features independently.
+            </p>
+          </noscript>
+
+          <hr class="print-only" />
+
+          <ul class="links">
+            <a href="pdfs/certificate-studysmarter-en.pdf" target="_blank"> Letter of Reference </a>
+            <a href="pdfs/certificate-studysmarter-de.pdf" target="_blank"> Arbeitszeugnis </a>
+          </ul>
+        </article>
+
+        <article>
           <figure>
-            <a
-              href="images/studysmarter.webp"
-              target="_blank"
-              aria-label="View screenshot of the StudySmarter web app"
-            >
+            <a href="images/studysmarter.webp" target="_blank" aria-label="View screenshot of the StudySmarter web app">
               <img src="images/studysmarter.webp" alt="" height="342" width="547" />
             </a>
             <a
@@ -283,14 +316,12 @@
             </a>
           </figure>
 
-          <h2>StudySmarter</h2>
+          <h2>Frontend Engineer</h2>
 
           <ul class="facts">
-            <li><em>Frontend Engineer</em></li>
+            <li>StudySmarter</li>
             <li data-translate="munich">Munich</li>
-            <li>
-              <time datetime="2021-12">12/2021</time> - <time datetime="2026-08">08/2026</time>
-            </li>
+            <li><time datetime="2021-12">12/2021</time> - <time datetime="2023-09">09/2023</time></li>
           </ul>
 
           <ul class="chips">
@@ -300,7 +331,7 @@
             <li><span class="chip rxjs">RxJS</span></li>
           </ul>
 
-          <wc-markdown src="markdown/work/studysmarter/studysmarter.en.md"></wc-markdown>
+          <wc-markdown src="markdown/work/studysmarter/frontend-engineer/text.en.md"></wc-markdown>
           <noscript>
             <p>
               After gaining experience as a Consultant, I sought the opportunity to join a diverse team of developers at
@@ -334,11 +365,10 @@
             </a>
           </figure>
 
-          <h2>Flash Gordon</h2>
-          <h3>Continental</h3>
+          <h2>Frontend Developer</h2>
 
           <ul class="facts">
-            <li><em>Frontend Developer</em></li>
+            <li>Continental</li>
             <li>Frankfurt</li>
             <li><time datetime="2020-12">12/2020</time> - <time datetime="2021-10">10/2021</time></li>
           </ul>
@@ -383,11 +413,9 @@
             </a>
           </figure>
 
-          <h2>Norova Analytics</h2>
-          <h3>Hochschule Furtwangen</h3>
+          <h2 data-translate="bachelor_thesis_student">Bachelor Thesis Student</h2>
 
           <ul class="facts">
-            <li><em>Thesis</em></li>
             <li>Furtwangen</li>
             <li><time datetime="2020-12">03/2020</time> - <time datetime="2021-10">08/2020</time></li>
           </ul>
@@ -421,8 +449,7 @@
               Full Stack solution, tying together complex SQL queries and a web-based visualisation of geographic
               information. <em>NorOvA Analytics</em> is capable to depict routes on an inter&shy;active map, powered by
               <a href="https://leafletjs.com/" target="_blank">Leaflet</a>. Moreover, analysts can delimit their results
-              spatially by drawing vectors on the map (<a href="images/norova-analytics.jpg" target="_blank">image</a
-              >).
+              spatially by drawing vectors on the map (<a href="images/norova-analytics.jpg" target="_blank">image</a>).
             </p>
           </noscript>
 
@@ -468,11 +495,10 @@
             </a>
           </figure>
 
-          <h2>eCommerce</h2>
-          <h3>J&M Angeln</h3>
+          <h2 data-translate="freelancer">Freelancer</h2>
 
           <ul class="facts">
-            <li><em data-translate="freelancer">Freelancer</em></li>
+            <li>J&M Angeln</li>
             <li><time datetime="2019">2019</time> - <time datetime="2020">2020</time></li>
           </ul>
 
@@ -508,11 +534,10 @@
             </a>
           </figure>
 
-          <h2>eServices</h2>
-          <h3>BKK Linde</h3>
+          <h2 data-translate="working_student">Working student</h2>
 
           <ul class="facts">
-            <li><em data-translate="working_student">Working student</em></li>
+            <li>BKK Linde</li>
             <li>Singen</li>
             <li><time datetime="2018-09">09/2018</time> - <time datetime="2020-07">07/2020</time></li>
           </ul>
@@ -546,9 +571,9 @@
 
           <ul class="links">
             <li>
-              <a href="pdfs/certificate-bkk-linde.pdf" target="_blank" data-translate="employers_reference"
-                >Employer's reference</a
-              >
+              <a href="pdfs/certificate-bkk-linde.pdf" target="_blank" data-translate="letter_of_reference">
+                Letter of Reference
+              </a>
             </li>
             <li><a href="https://www.bkk-linde.de/leistungen/serviceapp/" target="_blank">Service App</a></li>
           </ul>
