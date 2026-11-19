@@ -1,15 +1,15 @@
-@import 'open-props/style';
-@import 'open-props/normalize';
+@use 'open-props/style';
+@use 'open-props/normalize';
 
-@import '/src/scss/root.scss';
+@use '/src/scss/root.scss';
 
-@import '/src/scss/background.scss';
-@import '/src/scss/hero.section.scss';
-@import '/src/scss/facts.section.scss';
-@import '/src/scss/tooltip.scss';
-@import '/src/scss/career.section.scss';
-@import '/src/scss/quotes.section.scss';
-@import '/src/scss/work.section.scss';
+@use '/src/scss/background.scss';
+@use '/src/scss/hero.section.scss';
+@use '/src/scss/facts.section.scss';
+@use '/src/scss/tooltip.scss';
+@use '/src/scss/career.section.scss';
+@use '/src/scss/quotes.section.scss';
+@use '/src/scss/work.section.scss';
 
 html {
   scroll-behavior: smooth;
