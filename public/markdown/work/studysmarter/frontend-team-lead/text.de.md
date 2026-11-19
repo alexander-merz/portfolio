@@ -1,1 +1,6 @@
-TODO
+Im Oktober 2023 übernahm ich die Rolle des Frontend Team Leads und leitete somit ein kleines Entwicklerteam innerhalb eines Produktteams. Neben der Entwicklung neuer Features gehörte es nun auch zu meinen Aufgaben, die Arbeit des Teams zu planen und für eine verlässliche Umsetzung zu sorgen.
+Ich war an allen Phasen der Produktentwicklung beteiligt: von der strategischen Roadmap-Planung bis hin zu Releases und dem Monitoring. Als Führungskraft kümmerte ich mich außerdem um die Einarbeitung und Förderung von Junior-Entwicklern und neuen Teammitgliedern und unterstützte den Recruiting-Prozess.
+Der Großteil meiner täglichen Arbeit blieb weiterhin die Entwicklung. Zugleich brachte ich meine Erfahrung in Code Reviews, Architekturentscheidungen und Prozessoptimierung ein.
+Als unser Frontend Tech Lead im Dezember 2025 das Unternehmen verließ, übernahm ich zusätzliche Aufgaben, um die entstandene Lücke zu schließen. Mithilfe von <a href="https://revenuecat.com" target="_blank">RevenueCat</a> verantwortete ich unsere Experimente zu Abonnements und Preisen. Außerdem arbeitete ich eng mit <a href="https://paidmarketing.com" target="_blank">Paid Marketing</a> an Integrationen und der Qualität unserer Daten.
+In dieser Zeit rückte KI immer stärker in den Mittelpunkt. Meine Beiträge umfassten Agent Skills, KI-gestützte CI-Jobs und Prompt-Management in Langfuse.
+Als ich StudySmarter im August 2026 verließ, konnten alle im Unternehmen kleinere und mittelgroße Features eigenständig umsetzen und ausliefern.
